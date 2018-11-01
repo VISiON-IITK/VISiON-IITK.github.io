@@ -1,5 +1,5 @@
 <?php
-    $to = 'igvc.iitk@gmail.com';
+    $to = 'vardhang@iitk.ac.in';
     $firstname = $_POST["fname"];
     $subject= $_POST["subject"];
     $email= $_POST["email"];
