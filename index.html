@@ -111,7 +111,7 @@ img.m-right {
   justify-content: center;
 }
 .slider-wrapper {
-  font-size: 40px;
+  font-size: 2.5vw;
   color:#aaa;
   font-weight: bold;
   text-transform: uppercase;
@@ -120,35 +120,44 @@ img.m-right {
   justify-content: center;
 }
 .slider{
+  font-size: calc(20px + 1vw);
   height: 50px;
   padding-left:15px;
   overflow: hidden;
+  line-height: 45px;
 }
 .slider div {
   color:#fff;
   height: 50px;
   margin-bottom: 50px;
   padding: 2px 15px;
-  text-align: center;
+  text-align: left;
   box-sizing: border-box;
 }
 .slider-text1 {
-  background: lightgreen;
-  animation: slide 5s linear infinite;
+  animation: slide 7s linear infinite;
+}
+.fix-text{
+  text-align: center;
 }
 .slider-text2 {
-  background: skyblue;
+  
 }
 .slider-text3 {
-  background: lightcoral;
+  
+}
+.slider-text4 {
+  
 }
 @keyframes slide {
-  0% {margin-top:-300px;}
-  5% {margin-top:-200px;}
-  33% {margin-top:-200px;}
-  38% {margin-top:-100px;}
-  66% {margin-top:-100px;}
-  71% {margin-top:0px;}
+  0% {margin-top:-400px;}
+  4% {margin-top:-300px;}
+  25% {margin-top:-300px;}
+  29% {margin-top:-200px;}
+  50% {margin-top:-200px;}
+  54% {margin-top:-100px;}
+  75% {margin-top:-100px;}
+  79% {margin-top:0px;}
   100% {margin-top:0px;}
 }
 .close2 {
@@ -468,12 +477,14 @@ img.m-right {
 			<!-- End Image Left-Aligned -->
 			
 			<div class="slider-wrapper">
-			  I can write
+        <div class="fix-text">
+        We secured
+        </div>
 			  <div class="slider">
-				  <div class="slider-text1">HTML</div>
-				  <div class="slider-text2">CSS</div>
-				  <div class="slider-text3">PHP</div>
-			  
+				  <div class="slider-text1">4<sup>th</sup> in Cyber</div>
+				  <div class="slider-text2">3<sup>rd</sup> in IOP</div>
+          <div class="slider-text3">3<sup>rd</sup> in AutoNav</div>
+          <div class="slider-text4">2<sup>nd</sup> in Grand</div>
 			 </div>       
 			 </div>
 			</div>
@@ -492,9 +503,9 @@ img.m-right {
 			<div class="gap" style="height: 30px;">
 			</div>
 			<div style="overflow: auto;">
-			<h4 class="lined margin-20">AUB Robocon </h4>
+			<h4 class="lined margin-20">ABU Robocon </h4>
 			<!-- Image Right-Aligned -->
-			<img src="images/mappimg2.png" alt="" style="width:30%" class="m-left">
+			<img src="img/info/robocon.jpg" alt="" style="width:30%" class="m-left">
 			<!-- End Image Right-Aligned -->
 			<p>
 			We were previously the IIT kanpur team for ABU Robocon, where we have achieved 3rd rank nationally among 108 teams.
@@ -595,6 +606,9 @@ img.m-right {
         <div class="content">
 		<div class="layout">
 			<h2>Future aspects of team</h2>
+			<div class="gap" style="height: 30px;">
+      </div>
+      <div style="overflow: auto;">
 			<h4 class="lined margin-20">Cyber Security</h4>
 			<!-- Image Left-Aligned -->
 			<div style="overflow: auto;">
@@ -603,20 +617,7 @@ img.m-right {
 			<p>We are keen to work in the field of cybersecurity. We participated in the cybersecurity challenge of IGVC 2019 and secured 4th rank worldwide. 
         We now have a subgroup in our team which devotes itself towards solving challenges in cybersecurity. We are looking forward to exploring and contribute toward cybersecurity.
 			</p>
-			</div>
-			<div class="gap" style="height: 30px;">
-			</div>
-			<div style="overflow: auto;">
-			<h4 class="lined margin-20">Self-driving Car</h4>
-			<!-- Image Right-Aligned -->
-			<img src="img/info/selfdriving.jpg" alt="" style="width:30%" class="m-right">
-			<!-- End Image Right-Aligned -->
-			<p>
-        Autonomous vehicle i.e. the self driving car is the future of the automobile industry. We are aiming to participate in prominent
-         competitions that involve developing hardware and algorithms for the self-driving car.
-
-			</p>
-			</div>
+      </div>
 			<div class="gap" style="height: 30px;">
 			</div>
 			<div style="overflow: auto;">
@@ -630,7 +631,16 @@ img.m-right {
           of the complex bots used in various disciplines like space rover, reinforced humanoid, etc.
 			</p>
 			
-			</div>
+      </div>
+          <h4 class="lined margin-20">Self-driving Car</h4>
+          <!-- Image Right-Aligned -->
+          <img src="img/info/selfdriving.jpg" alt="" style="width:30%" class="m-right">
+          <!-- End Image Right-Aligned -->
+          <p>
+            Autonomous vehicle i.e. the self driving car is the future of the automobile industry. We are aiming to participate in prominent
+            competitions that involve developing hardware and algorithms for the self-driving car.
+          </p>
+          </div>
 			<div class="gap" style="height: 30px;">
 			</div>
 		</div>
