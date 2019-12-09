@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Team</title>
+  <link rel="shortcut icon" href="./img/logom.ico">
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<!-- <link rel="stylesheet" href="fonts/icomoon/style.css"> -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/all.min.css">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  display: inline-block;
+  margin: 0px;
+   transition: 0.3s;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  z-index: -1;
+}
+
+	 .logo-image{
+   padding-top: 5px; 
+    height: 80px;
+    overflow: hidden;
+    opacity: 1;
+    margin-top: 0px;
+}
+
+ 
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+   transform-origin: center right;
+    cursor: pointer;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  z-index: -1;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: translateX(-100%) rotateY(-180deg);
+  z-index: -1;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  z-index: -1;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+  z-index: -1
+}
+
+.flip-card-back {
+  background-color: white;
+  color: white;
+  opacity: 1;
+  transform: rotateY(180deg);
+  z-index: -1;
+}
+</style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<div id="overlayer">
+    <div class="loader">
+        Loading...
+    </div>
+</div>
+<div class="site-wrap">
+<div class="site-mobile-menu site-navbar-target">
+<div class="site-mobile-menu-header">
+<div class="site-mobile-menu-close mt-3">
+<span class="icon-close2 js-menu-toggle"></span>
+</div>
+</div>
+<div class="site-mobile-menu-body"></div>
+</div>
+<header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-6 col-xl-2">
+<h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0"><img src="img/visionfinal.png" class="logo-image"></a></h1>
+</div>
+<div class="col-12 col-md-10 d-none d-xl-block">
+<nav class="site-navigation position-relative text-right" role="navigation">
+<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+  <li><a href="index.html#home-section" class="nav-link">Home</a></li>
+  <li><a href="index.html#about-section" class="nav-link">About Us</a></li>
+  <li><a href="index.html#blog-section" class="nav-link">Blog</a></li>
+  <!-- <li><a href="alumni.html" class="nav-link">Alumni</a></li> -->
+  <li><a href="team.html" class="nav-link"  style="color: #007bff;">Team</a></li>
+  <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+<li class="social"><a href="https://www.facebook.com/igvc.iitk/" class="nav-link" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+<li class="social"><a href="https://www.youtube.com/channel/UCrQoKMEBySfXPEqXGk-CZ8A" class="nav-link" target="_blank"><i class="fab fa-youtube"></i></a></li>
+<li class="social"><a href="https://au.linkedin.com/company/igvc-iitk" class="nav-link" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+<li class="social"><a href="https://github.com/IGVC-IITK" class="nav-link" target="_blank"><i class="fab fa-github"></i></a></li>
+</ul>
+</nav>
+</div>
+<div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="fas fa-bars"></span></a></div>
+</div>
+</div>
+</header>
+<div class="site-blocks-cover overlay" style="background-image: url(img/banner.jpg); background-attachment: fixed; height: 100px;"id="home-section">
+<center><h2 style="font-size: 7em; padding-top: 85px; "><font color="white">THE TEAM</font></h2>
+</center>
+</div>
+<section class="site-section border-bottom" id="team-section">
+<div class="container">
+    <h1 style="color: white; text-align: center;">Faculty Advisor</h1>
+<center>
+	<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="">
+<div class="team-member">
+
+<ul class="social">
+<li><a href="#"><i class="fab fa-facebook-f"></i></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+<li><a href="#"><i class="fab fa-github"></i></a></li>
+</ul>
+<div class="flip-card" >
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/kotharisir.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <img src="img/kotharisir.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+    </div>
+  </div>
+</div>
+<div class="p-3">
+<h3 style="color: greenyellow;">Dr.Mangal Kothari</h3>
+<span class="position" style="color: white">Faculty Advisor</span>
+</div>
+</div>
+</div>
+</center>
+    <h1 style="color: white; text-align: center;">Team Head</h1>
+<center>
+	<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="">
+<div class="team-member">
+
+<ul class="social">
+<li><a href="#"><i class="fab fa-facebook-f"></i></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+<li><a href="#"><i class="fab fa-github"></i></a></li>
+</ul>
+<div class="flip-card" >
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/aalap.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <img src="img/aalap.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+    </div>
+  </div>
+</div>
+<div class="p-3">
+<h3 style="color: greenyellow;">Aalap Anil Shah</h3>
+<span class="position" style="color: white">Team Head</span>
+</div>
+</div>
+</div>
+
+</center>
+<h1 style="color: white; text-align: center;">Team Leaders</h1>
+<div class="row">    
+<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="">
+<div class="team-member">
+<ul class="social">
+<li><a href="#"><i class="fab fa-facebook-f"></i></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+<li><a href="#"><i class="fab fa-github"></i></a></li>
+</ul>
+<div class="flip-card" style="padding-left:15px; padding-right:15px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/faizan.jpg" alt="Avatar" style="object-fit: cover;width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <img src="img/Faizan_2.JPG" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+    </div>
+  </div>
+</div>
+
+<div class="p-3">
+<h3 style="color: greenyellow;">Faizan Siddiqui</h3>
+<span class="position" style="color: white">Team Lead,Y17</span>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+<div class="team-member">
+<ul class="social">
+<li><a href="https://www.facebook.com/faizansid77"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+<li><a href="https://github.com/faizansid77"><i class="fab fa-github"></i></a></li>
+</ul>
+<div class="flip-card" style="padding-left:15px; padding-right:15px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/Nitik_1.jpeg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <img src="img/nitik.jpg" alt="Avatar" style="object-fit: cover;width:300px;height:300px;">
+    </div>
+  </div>
+</div>
+
+<div class="p-3">
+<h3 style="color: greenyellow;">Nitik Jain</h3>
+<span class="position" style="color: white">Team Lead,Y17</span>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+<div class="team-member">
+
+<ul class="social">
+<li><a href="https://www.facebook.com/nitik.jain.1"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+<li><a href="https://github.com/nitik1998"><i class="fab fa-github"></i></a></li>
+</ul>
+<div class="flip-card" style="padding-left:15px; padding-right:15px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/shivam.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <img src="img/shivam.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+    </div>
+  </div>
+</div>
+<div class="p-3">
+<h3 style="color: greenyellow;">Shivam Kumar</h3>
+<span class="position" style="color: white">Team Lead,Y17</span>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="row">
+    
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="">
+<div class="team-member">
+
+<ul class="social">
+<li><a href="https://www.facebook.com/Prashant446"><i class="fab fa-facebook-f"></i></li>
+<li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+<li><a href="https://github.com/skymatte"><i class="fab fa-github"></i></a></li>
+</ul>
+<div class="flip-card" style="padding-left:15px; padding-right:15px;">
+  <div class="flip-card-inner">
+    <div class="flip-card-front">
+      <img src="img/apurv.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+    </div>
+    <div class="flip-card-back">
+      <img src="img/apurv.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+    </div>
+  </div>
+</div>
+<div class="p-3">
+<h3 style="color: greenyellow;">Apurva Nandan</h3>
+<span class="position" style="color: white">Team Lead,Y17</span>
+</div>
+</div>
+</div>
+
+<div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+    <div class="team-member">
+    
+    <ul class="social">
+    <li><a href="https://www.facebook.com/nitik.jain.1"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+    <li><a href="https://github.com/nitik1998"><i class="fab fa-github"></i></a></li>
+    </ul>
+    <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src="img/Vivek_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+        </div>
+        <div class="flip-card-back">
+          <img src="img/Vivek_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+        </div>
+      </div>
+    </div>
+    <div class="p-3">
+    <h3 style="color: greenyellow;">Vivek Agarwal</h3>
+    <span class="position" style="color: white">Team Lead,Y17</span>
+    </div>
+    </div>
+    </div>
+
+  </div>
+<h1 style=" color: white;text-align: center; margin: 50px;">Team Members</h1>
+<div class="row">
+<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+<div class="team-member">
+
+    <ul class="social">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/kartik.png" alt="Avatar" style="object-fit: cover ;width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <img src="img/kartik.png" alt="Avatar" style="object-fit: cover;width:300px;height:300px;">
+            </div>
+          </div>
+        </div>
+        
+        <div class="p-3">
+        <h3 style="color: greenyellow;">Kartik Gupta</h3>
+        <span class="position" style="color: white">Team Member,Y18</span>
+        </div>
+        </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+            <ul class="social">
+                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fab fa-github"></i></a></li>
+                </ul>
+                <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="img/kartik.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                    </div>
+                    <div class="flip-card-back">
+                      <img src="img/kartik.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="p-3">
+                <h3 style="color: greenyellow;">Prashant Kumar</h3>
+                <span class="position" style="color: white">Team Member,Y18</span>
+                </div>
+                </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="team-member">    
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/Prashant446"><i class="fab fa-facebook-f"></i></li>
+                    <li><a href="https://www.linkedin.com/in/prashant446"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/Prashant446"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                    <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="img/Prashant_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/Prashant_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-3">
+                    <h3 style="color: greenyellow;">Rishav Kumar</h3>
+                    <span class="position" style="color: white">Team Member,Y18</span>
+                    </div>
+                    </div>
+                    </div>
+
+                  </div>
+
+                  <div class="row">
+                      
+                      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                          <div class="team-member">
+
+                                  
+                                  <ul class="social">
+                                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                  <li><a href="#"><i class="fab fa-github"></i></a></li>
+                                  </ul>
+                                  <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+                                    <div class="flip-card-inner">
+                                      <div class="flip-card-front">
+                                        <img src="img/ritik_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                                      </div>
+                                      <div class="flip-card-back">
+                                        <img src="img/ritik_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="p-3">
+                                  <h3 style="color: greenyellow;">Ritik Saxena</h3>
+                                  <span class="position" style="color: white">Team Member,Y18</span>
+                                  </div>
+                                  </div>
+                                  </div>
+                          
+                                  <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                                      <div class="team-member">
+
+                          <ul class="social">
+                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                          <li><a href="#"><i class="fab fa-github"></i></a></li>
+                          </ul>
+                          <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="img/Panda_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                              </div>
+                              <div class="flip-card-back">
+                                <img src="img/Panda_2.jpeg" alt="Avatar" style="object-fit: cover;width:300px;height:300px;">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="p-3">
+                          <h3 style="color: greenyellow;">Rwit Panda</h3>
+                          <span class="position" style="color: white">Team Member,Y18</span>
+                          </div>
+                          </div>
+                          </div>
+
+                          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                              <div class="team-member">
+
+                          <ul class="social">
+                              <li><a href="https://www.facebook.com/profile.php?id=100030015540958"><i class="fab fa-facebook-f"></i></a></li>
+                              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                              <li><a href="https://github.com/rishav1606"><i class="fab fa-github"></i></a></li>
+                              </ul>
+                              <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+                                <div class="flip-card-inner">
+                                  <div class="flip-card-front">
+                                    <img src="img/siddhant.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                                  </div>
+                                  <div class="flip-card-back">
+                                    <img src="img/Chandak.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="p-3">
+                              <h3 style="color: greenyellow;">Siddhant Chandak</h3>
+                              <span class="position" style="color: white">Team Member,Y18</span>
+                              </div>
+                              </div>
+                              </div> 
+                  </div>
+<div class="row">
+<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="">
+<div class="team-member">
+
+    <ul class="social">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/chitresh.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <img src="img/chitresh1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+            </div>
+          </div>
+        </div>
+        <div class="p-3">
+        <h3 style="color: greenyellow;">Chitresh Chaudhri</h3>
+        <span class="position" style="color: white">Team Member,Y18</span>
+        </div>
+        </div>
+        </div>
+
+    
+<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+<div class="team-member">
+
+    <ul class="social">
+        <li><a href="https://www.facebook.com/apurva.nandan8"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="https://github.com/apurvanandan1997"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/Darpit_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <img src="img/Darpit_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+            </div>
+          </div>
+        </div>
+        <div class="p-3">
+        <h3 style="color: greenyellow;">Darpit Choudhary</h3>
+        <span class="position" style="color: white">Team Member,Y18</span>
+        </div>
+        </div>
+        </div>
+<!-- 
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="">
+            <div class="team-member">
+
+                <ul class="social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                    <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="img/moksh1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/moksh1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-3">
+                    <h3 style="color: greenyellow;">Devanshu Gupta</h3>
+                    <span class="position" style="color: white">Team Member,Y18</span>
+                    </div>
+                    </div>
+                    </div> -->
+</div>
+
+<div class="row">
+<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+<div class="team-member">
+
+    <ul class="social">
+        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a href="#"><i class="fab fa-github"></i></a></li>
+        </ul>
+        <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="img/moksh1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <img src="img/moksh1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+            </div>
+          </div>
+        </div>
+        <div class="p-3">
+        <h3 style="color: greenyellow;">Moksh Shukla</h3>
+        <span class="position" style="color: white">Team Member,Y18</span>
+        </div>
+        </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="team-member">
+            
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/apurva.nandan8"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="https://github.com/apurvanandan1997"><i class="fab fa-github"></i></a></li>
+                    </ul>
+                    <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+                      <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                          <img src="img/priyanshu.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                        </div>
+                        <div class="flip-card-back">
+                          <img src="img/priyanshu.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="p-3">
+                    <h3 style="color: greenyellow;">Priyanshu Agarwal</h3>
+                    <span class="position" style="color: white">Team Member,Y18</span>
+                    </div>
+                    </div>
+                    </div>
+
+                      </div>
+</div>
+</section>
+<footer style="background-color: black">
+<div class="container">
+	<div class="row">
+  <div style="background-color:black">
+      <div class="row text-center text-lg-left">
+          <div class="col-lg-4 text-lg-right border-right">
+              <h1 style="color: greenyellow">Team VISION</h1>
+              <h4 style="color: white">Indian Institute of Technology, Kanpur</h4>
+              <p style="color: white;">
+                  Kanpur - 208016
+                  <br>
+                  Uttar Pradesh
+                  <br>
+                  India
+              </p>
+               
+       <ul class="list-unstyled list-inline text-white">
+                    
+                 <li class="list-inline-item">
+                      <a class="font-white" target="_blank" href="https://www.facebook.com/igvc.IITK" style="color: white; ">
+                          <i class="fab fa-facebook fa-3x"></i>
+                      </a>
+                  </li>
+                  <li class="list-inline-item" >
+                      <a class="font-white" target="_blank"
+                          href="https://github.com/orgs/IGVC-IITK/dashboard" style="color: white;">
+                         <i class="fab fa-linkedin-in fa-3x"></i>
+                      </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a class="font-white" target="_blank"
+                          href="https://www.linkedin.com/groups/4024304/profile" style="color: white;">
+                          <i class="fab fa-github fa-3x"></i>
+                      </a>
+                  </li> 
+              </ul>  
+             <hr class="hr-red d-lg-none">
+          </div>
+          <div class="col-lg-4">
+              <h3 style="color: greenyellow; padding: 0 15px;">Contact Us</h3>
+              <form action="https://formspree.io/pr.igvciitk@gmail.com" class="contact-form container my_form"
+                  method="POST">
+                  <div class="row">
+                      <div class="col-12 col-lg-6">
+                          <input class=" form-input w-100 m-1 ml-0" id="first_name" style = "color: gray;" name="First_name"
+                              placeholder=" First Name" type="text">
+                      </div>
+                      <div class=" col-12 col-lg-6">
+                          <input class="form-input w-100 m-1 ml-0" id="last_name" style = "color: gray;" name="Last_name"
+                              placeholder=" Last Name" type="text">
+                      </div>
+                  </div>
+                  <input class=" form-input w-100 m-1 ml-0" style = "color: gray;" id="email" name="email-id" placeholder=" Email"
+                      type="email">
+
+                  <textarea class=" form-input w-100 m-1 ml-0" style = "color: gray;" id="message" name="message"
+                      placeholder=" Message" type="text"></textarea>
+                  <input class=" form-input m-1 ml-0" style = "color: gray;" type="submit" value="Send">
+              </form>
+              <hr class="hr-red d-lg-none">
+          </div>
+          <div class="col-lg-4">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Figvc.IITK&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=322731122009353" width="360" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+          </div>
+
+      </div>
+  </div>
+</div>
+</div>
+</footer>
+<script src="js/jquery-3.3.1.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/jquery-ui.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/popper.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/bootstrap.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/owl.carousel.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/jquery.countdown.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/jquery.easing.1.3.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/aos.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/jquery.fancybox.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/jquery.sticky.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/isotope.pkgd.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/main.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script type="6a9fa9fbb3e34339c849d587-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="6a9fa9fbb3e34339c849d587-|49" defer=""></script></body>
+</body>
+</html>
