@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+ <meta charset="utf-8">
+<title>Team Vision IITK</title>
+<link rel="shortcut icon" href="./img/vision_small.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/style.css">
+<style type="text/css">
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+.login-trigger1 {
+  font-weight: bold;
+  color: #fff;
+  background: #4caf50;
+  padding: 0px 0px;
+  border-radius: 20px;
+  position: relative; 
+}
+
+
+.login-trigger2 {
+  font-weight: bold;
+  color: #fff;
+  background: #f54967;
+  padding: 0px 0px;
+  border-radius: 20px;
+  position: relative; 
+}
+.login-trigger3 {
+  font-weight: bold;
+  color: #fff;
+  background: #328fa5;
+  padding: 0px 0px;
+  border-radius: 20px;
+  position: relative; 
+}
+/Modal/
+h4 {
+  font-weight: bold;
+  color: #fff;
+}
+.close1 {
+  color: #fff;
+  transform: scale(1.2)
+}
+.modal-content1 {
+  font-weight: lighter;
+  background: linear-gradient(to bottom right,#77b300,#223300);
+}
+img.m-left {
+    float: left;
+    margin: 0 25px 20px 0;
+}
+img.m-right {
+    float: right;
+    margin: 0 0 20px 25px;
+}
+.form-control1 {
+  margin: 1em 0;
+}
+.form-control1:hover, .form-control1:focus {
+  box-shadow: none;  
+  border-color: #fff;
+}
+.username1, .password1 {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 2px solid #eee;
+  padding-left: 0;
+  font-weight: normal;
+  background: transparent;  
+}
+.form-control1::-webkit-input-placeholder {
+  color: #eee;  
+}
+.form-control1:focus::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #fff;
+}
+.login1 {
+  padding: 6px 20px;
+  border-radius: 20px;
+  background: none;
+  border: 2px solid #FAB87F;
+  color: #FAB87F;
+  font-weight: bold;
+  transition: all .5s;
+  margin-top: 1em;
+}
+.login1:hover {
+  background: #FAB87F;
+  color: #fff;
+}
+.contento {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider-wrapper {
+  font-size: 2.5vw;
+  color:#aaa;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slider{
+  font-size: calc(20px + 1vw);
+  height: 50px;
+  padding-left:15px;
+  overflow: hidden;
+  line-height: 45px;
+}
+.slider div {
+  color:#fff;
+  height: 50px;
+  margin-bottom: 50px;
+  padding: 2px 15px;
+  text-align: left;
+  box-sizing: border-box;
+}
+.slider-text1 {
+  animation: slide 7s linear infinite;
+}
+.fix-text{
+  text-align: center;
+}
+.slider-text2 {
+  
+}
+.slider-text3 {
+  
+}
+.slider-text4 {
+  
+}
+@keyframes slide {
+  0% {margin-top:-400px;}
+  4% {margin-top:-300px;}
+  25% {margin-top:-300px;}
+  29% {margin-top:-200px;}
+  50% {margin-top:-200px;}
+  54% {margin-top:-100px;}
+  75% {margin-top:-100px;}
+  79% {margin-top:0px;}
+  100% {margin-top:0px;}
+}
+.close2 {
+  color: #fff;
+  transform: scale(1.2)
+}
+.modal-content2 {
+  font-weight: lighter;
+  background: linear-gradient(to bottom right,#ff8095, #ff4d6a);
+}
+.form-control2 {
+  margin: 1em 0;
+}
+.form-control2:hover, .form-control2:focus {
+  box-shadow: none;  
+  border-color: #fff;
+}
+.username2, .password2 {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 2px solid #eee;
+  padding-left: 0;
+  font-weight: normal;
+  background: transparent;  
+}
+.form-control2::-webkit-input-placeholder {
+  color: #eee;  
+}
+.form-control2:focus::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #fff;
+}
+.login2 {
+  padding: 6px 20px;
+  border-radius: 20px;
+  background: none;
+  border: 2px solid #FAB87F;
+  color: #FAB87F;
+  font-weight: bold;
+  transition: all .5s;
+  margin-top: 1em;
+}
+.login2:hover {
+  background: #FAB87F;
+  color: #fff;
+}
+.close3 {
+  color: #fff;
+  transform: scale(1.2)
+}
+.modal-content3 {
+  font-weight: lighter;
+  background: linear-gradient(to bottom right,#2d93b9,#195267);
+}
+.form-control3 {
+  margin: 1em 0;
+}
+.form-control3:hover, .form-control3:focus {
+  box-shadow: none;  
+  border-color: #fff;
+}
+.username3, .password3 {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  border-bottom: 2px solid #eee;
+  padding-left: 0;
+  font-weight: normal;
+  background: transparent;  
+}
+.form-control3::-webkit-input-placeholder {
+  color: #eee;  
+}
+.form-control3:focus::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #fff;
+}
+.login3 {
+  padding: 6px 20px;
+  border-radius: 20px;
+  background: none;
+  border: 2px solid #FAB87F;
+  color: #FAB87F;
+  font-weight: bold;
+  transition: all .5s;
+  margin-top: 1em;
+}
+.login3:hover {
+  background: #FAB87F;
+  color: #fff;
+}
+.container1
+{
+    position: relative;
+    width: 100%; 
+    height: 100%;
+}
+.container1 .box1
+{
+    position: relative;
+    width: calc(370px - 30px);
+    height: calc(400px - 30px);
+    background: #000;
+    display: inline-block;
+    margin: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.container1 .box1 .icon
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: 0.5s;
+    z-index: 1;
+}
+.container1 .box1:hover .icon
+{
+    top: 20px;
+    left: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.container1 .box1 .icon .fa
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    transition: 0.5s;
+    color: #fff;
+}
+.container1 .box1:hover .icon .fa
+{
+    font-size: 40px;
+}
+.container1 .box1 .content1
+{
+    position: absolute;
+    top: 100%;
+    height: calc(100% - 100px);
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    opacity: 0;
+}
+.container1 .box1:hover .content1
+{
+    top: 100px;
+    opacity: 1;
+}
+.container1 .box1 .content1 h3
+{
+    margin: 0 0 10px;
+    padding: 0;
+    color: #fff;
+    font-size: 24px;
+}
+.container1 .box1 .content1 p
+{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+
+.container1 .box1:nth-child(1) .icon
+{
+  
+    background: #319635;
+}
+.container1 .box1:nth-child(1)
+{
+  
+    background: #4caf50;
+}
+.container1 .box1:nth-child(2) .icon
+{
+    background: #d03852;
+}
+.container1 .box1:nth-child(2)
+{
+    background: #f54967;
+}
+.container1 .box1:nth-child(3) .icon
+{
+    background: #23798e;
+}
+.container1 .box1:nth-child(3)
+{
+    background: #328fa5;
+}
+
+	 .logo-image{
+   padding-top: 17px; 
+    height: 80px;
+    overflow: hidden;
+    opacity: 1;
+    margin-top: 0px;
+}
+
+</style>
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<div id="overlayer">
+    <div class="loader">
+        Loading...
+    </div>
+</div>
+<div class="site-wrap">
+<div class="site-mobile-menu site-navbar-target">
+<div class="site-mobile-menu-header">
+<div class="site-mobile-menu-close mt-3">
+<span class="icon-close2 js-menu-toggle"></span>
+</div>
+</div>
+<div class="site-mobile-menu-body"></div>
+</div>
+<header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+<div class="container">
+<div class="row align-items-center">
+<div class="col-6 col-xl-2">
+<h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0"><img src="img/visionfinal_white.png" class="logo-image"></a></h1>
+</div>
+<div class="col-12 col-md-10 d-none d-xl-block">
+  <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+    <li><a href="index.html" class="nav-link">Home</a></li>
+    <li><a href="aboutus.html" class="nav-link" style="color: #007bff;">About Us</a></li>
+    <li><a href="blog.html" class="nav-link">Blog</a></li>
+     <li><a href="time.html" class="nav-link">Legacy</a></li>
+    <li><a href="team.html" class="nav-link">Team</a></li>
+    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+    <li class="social"><a href="https://www.facebook.com/igvc.iitk/" class="nav-link" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+    <li class="social"><a href="https://www.youtube.com/channel/UCrQoKMEBySfXPEqXGk-CZ8A" class="nav-link" target="_blank"><i class="fab fa-youtube"></i></a></li>
+    <li class="social"><a href="https://au.linkedin.com/company/igvc-iitk" class="nav-link" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+    <li class="social"><a href="https://github.com/IGVC-IITK" class="nav-link" target="_blank"><i class="fab fa-github"></i></a></li>
+    </ul>
+    </nav>
+</div>
+<div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="fas fa-bars"></span></a></div>
+</div>
+</div>
+</header>
+<div class="site-blocks-cover overlay bg-image" style="background-image: url(img/banner.jpg); background-attachment: fixed;background-position-y: top; padding-top: 100px;" data-aos="fade" id="home-section">
+<div class="container">
+<div class="row align-items-center justify-content-center">
+<div class="col-md-10 mt-lg-5 text-center">
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<h1 style = "size : 150px; color: #f7941d; opacity: 1;"> About Us</h1>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="site-section" id="about-section">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 ml-auto" data-aos="fade-up" data-aos-delay="100">
+<h3 class="" style="color: greenyellow; text-align: center; font-size: 50px; padding-bottom: 15px;">Who Are We?</h3>
+<p style="font-size: 20px;">
+        Team Vision IITK is a student team of IIT Kanpur. We are a dynamic team of 17 engineering undergrad students who have come together to demonstrate technical, designing and management skills to compete in the Intelligent Ground Vehicle Competition 2019. 
+        Approximately 40 teams typically from India, Europe, and the USA participate in this competition. We are also aiming to participate in NASA Space Robotics Challenge which is a virtual competition of advance robotic software and autonomous capabilities for space exploration missions on the surface of extraterrestrial objects, such as distant planets or moons. We work together at IIT Kanpur’s Imagering Lab - with a common goal of making the best autonomous robot. <br>
+         Team VISiON debuted in IGVC in 2018 and achieved 5th rank in the design competition and 12th rank overall internationally among 36 teams. In the second attempt of the team at 27th Intelligent Ground Vehicle Competition (IGVC), our vehicle, Daksh II stood 2nd in the Grand Challenge (Overall Competition) among 37 international teams and achieved 3rd rank in Autonomous Navigation (the AutoNav Challenge). Apart from AutoNav, our team also participated in the Interoperability Profiles Challenge (IOP) and the Cyber Security Challenge, where we achieved 3rd and 4th ranks respectively.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<div class="site-section cta-big-image" id="about-section">
+        <div class="container">
+                <h3 class="" style="color: greenyellow; font-size: 50px; text-align: center; padding-bottom: 30px;">Team</h3>
+        <div class="row">
+               
+        <div class="col-lg-5 mb-5" data-aos="fade-up" data-aos-delay="">
+        <img src="img/igvc1.jpg"  style= "border-radius: 2%;" class="img-fluid">
+        </figure>
+        </div>
+        <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+        <p style="font-size: 20px;">Team VISiON (previously Team IGVC-IITK), a robotics team from IIT Kanpur is a group of highly motivated students with a passion for robotics consisting of Undergraduate Students and Faculty Advisor, working in the field of autonomous ground vehicles to participate in the Intelligent Ground Vehicle Competition (IGVC), which is being held at Oakland University, Michigan, USA pointer-eventsry year in June for the past 26 years. Approximately 40 teams typically from India, Europe, and the USA participate in this competition. We are also aiming to participate in NASA Space Robotics Challenge which is a virtual competition to advance robotic software and autonomous capabilities for space exploration missions on the surface of extraterrestrial objects, such as distant planets or moons.</p>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="site-section cta-big-image" id="about-section">
+                <div class="container">
+                        <h3 class="" style="color: greenyellow; font-size: 50px; text-align: center; padding-bottom: 25px;">The Bot: Daksh II</h3>
+                <div class="row">
+                       
+                <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+                <img src="img/vehicle_cad_and_actual (1).jpg"  style= "border-radius: 2%; object-fit: cover;" class="img-fluid">
+                </figure>
+                </div>
+                <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+                <p style="font-size: 18px;">Our autonomous bot, Daksh-II is a 3-wheel differential drive vehicle with a front-mounted castor wheel. A sensor frame is attached to the chassis on which we have mounted various sensors like a Laser Scanner, Stereo Camera, Encoders, IMU, GPS, etc. 
+                <br>For the curious minds out there, here is the entire Design Report.</p>
+                <button type="button" class="btn btn-outline-success" style="margin-bottom: 10px;"><a href="https://drive.google.com/file/d/1AMq3g0KLiafcrDRL6f6FQDyRh_XMQsZk/view">Read More</a></button>
+                <p>For a sneak peek through the entire working mechanism of Daksh-II, visit the below link.</p>
+                <button type="button" class="btn btn-outline-success"><a href="https://drive.google.com/file/d/1SJZ8kh-PldZt8xxJw9SNzXXC6WXrI52O/view">Poster</a></button>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+
+
+        <div class="site-section cta-big-image" id="about-section">
+                <div class="container">
+                        <h3 class="" style="color: greenyellow; font-size: 50px; text-align: center; padding-bottom: 25px;">The Institute</h3>
+                <div class="row">
+                       
+                <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+                <img src="img/iitk.jpg"  style= "border-radius: 2%;" class="img-fluid">
+                </figure>
+                </div>
+                <div class="col-lg-6 ml-auto" data-aos="fade-up" data-aos-delay="100">
+                <p style="font-size: 18px;">Indian Institute of Technology, Kanpur is one of the premier science and engineering schools in the world and undoubtedly the most respected educational institutions in India. Over the years it has been consistently ranked among the top engineering schools by several national and international surveys. IIT Kanpur has been ranked sixth in the NIRF rankings for the year 2019. The aim of the Institute is to provide meaningful education, to conduct original research of the highest standard and to provide leadership in technological innovation.</p>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                </div>
+       
+                <div class="site-section cta-big-image" id="about-section">
+                        <div class="container">
+                                <h3 class="" style="color: greenyellow; font-size: 50px; text-align: center; padding-bottom: 25px;">The Competition</h3>
+                        <div class="row">
+                               
+                        <div class="col-lg-5 mb-5" data-aos="fade-up" data-aos-delay="">
+                        <img src="img/map.jpg"  style= "border-radius: 2%;" class="img-fluid">
+                        </figure>
+                        </div>
+                        <div class="col-lg-6 ml-auto" data-aos="fade-up" data-aos-delay="100">
+                        <p style="font-size: 18px;">The Intelligent Ground Vehicle Competition (IGVC) is an annual international robotics competition for teams of undergraduate and graduate students. Teams design and build an autonomous ground vehicle capable of completing several difficult challenges. <br> Competition is well suited to senior design “capstone” courses as well as extracurricular design projects.<br>
+                                The competition has taken place each year since 1993. The competition is normally held on the campus of Oakland University in Rochester, Michigan, although it has occasionally moved to other venues within the state of Michigan. Approximately 40 teams typically participate in this competition.</p>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+                        </div>
+
+
+
+<footer style="background-color: black">
+<div class="container">
+	<div class="row">
+  <div style="background-color:black">
+      <div class="row text-center text-lg-left">
+          <div class="col-lg-4 text-lg-right border-right">
+              <h1 style="color: greenyellow">Team VISION</h1>
+              <h4 style="color: white">Indian Institute of Technology, Kanpur</h4>
+              <p style="color: white;">
+                  Kanpur - 208016
+                  <br>
+                  Uttar Pradesh
+                  <br>
+                  India
+              </p>
+               
+       <ul class="list-unstyled list-inline text-white">
+                    
+                 <li class="list-inline-item">
+                      <a class="font-white" target="_blank" href="https://www.facebook.com/igvc.IITK" style="color: white; ">
+                          <i class="fab fa-facebook fa-3x"></i>
+                      </a>
+                  </li>
+                  <li class="list-inline-item" >
+                      <a class="font-white" target="_blank"
+                          href="https://github.com/orgs/IGVC-IITK/dashboard" style="color: white;">
+                         <i class="fab fa-linkedin-in fa-3x"></i>
+                      </a>
+                  </li>
+                  <li class="list-inline-item">
+                      <a class="font-white" target="_blank"
+                          href="https://www.linkedin.com/groups/4024304/profile" style="color: white;">
+                          <i class="fab fa-github fa-3x"></i>
+                      </a>
+                  </li> 
+              </ul>  
+              
+
+
+             <hr class="hr-red d-lg-none">
+          </div>
+          <div class="col-lg-4">
+              <h3 style="color: greenyellow; padding: 0 15px;">Contact Us</h3>
+              <form action="https://formspree.io/pr.igvciitk@gmail.com" class="contact-form container my_form"
+                  method="POST">
+                  <div class="row">
+                      <div class="col-12 col-lg-6">
+                          <input class=" form-input w-100 m-1 ml-0" id="first_name" style = "color: gray;" name="First_name"
+                              placeholder=" First Name" type="text">
+                      </div>
+                      <div class=" col-12 col-lg-6">
+                          <input class="form-input w-100 m-1 ml-0" id="last_name" style = "color: gray;" name="Last_name"
+                              placeholder=" Last Name" type="text">
+                      </div>
+                  </div>
+                  <input class=" form-input w-100 m-1 ml-0" style = "color: gray;" id="email" name="email-id" placeholder=" Email"
+                      type="email">
+
+                  <textarea class=" form-input w-100 m-1 ml-0" style = "color: gray;" id="message" name="message"
+                      placeholder=" Message" type="text"></textarea>
+                  <input class=" form-input m-1 ml-0" style = "color: gray;" type="submit" value="Send">
+              </form>
+              <hr class="hr-red d-lg-none">
+          </div>
+          
+
+      </div>
+  </div>
+</div>
+</div>
+</footer>
+
+
+
+
+
+
+
+
+</div> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<!-- <script src="js/jquery-3.3.1.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script> -->
+<script src="js/jquery-ui.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/popper.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/bootstrap.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/owl.carousel.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/jquery.countdown.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/jquery.easing.1.3.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/aos.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/jquery.fancybox.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/jquery.sticky.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/isotope.pkgd.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/main.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script type="6a9fa9fbb3e34339c849d587-text/javascript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script type="text/javascript">
+  // made by chappu Panda
+      $(document).ready(function(){
+        $(window).scroll(function() { // check if scroll event happened
+          if ($(document).scrollTop() > 1) { // check if user scrolled more than 50 from top of the browser window
+            $(".logo-image").attr("src", "img/visionfinal.png"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+          } else {
+            $(".logo-image").attr("src", "img/visionfinal_white.png"); // if not, change it back to transparent
+          }
+        });
+      });
+  </script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="6a9fa9fbb3e34339c849d587-|49" defer=""></script>
+
+
+
+</body>
+</html>

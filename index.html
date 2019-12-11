@@ -17,724 +17,583 @@
 <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
 <link rel="stylesheet" href="css/aos.css">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/style1.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
 <style type="text/css">
 @import url('https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900');
+@import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow);
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+
+.newfa:hover{
+  background-color: #414042;
+    /* color: #fff; */
+    color:#ffffff;
+    border: 1px solid #000000;
+    box-shadow: inset 0px 0px 0px 5px #f7941d ;
+    transform: scale(1.2,1.2);
+}
+.newfa{
+    font-size: 35px;
+    color:#f7941d ;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid #f7941d;
+    line-height: 90px;
+    transition: all ease-in-out 0.20s,background-color ease-in-out 0.05s;
+}
+
+.name{
+  display:flex;
+  display: inline-block;
+  width:18%;
+  height:100%;
+  padding-left: 5% ;
+}
+#medal{
+  width:250px;
+}
+.light{
+  animation: anim 2s infinite;
+}
+
+@keyframes anim {
+  0% {
+    x: 111.416;
+    y: 50.37;
+  }
+  100% {
+   x: 400;
+   y: 50;
+  }
+}
+
+
+
+
 .login-trigger1 {
   font-weight: bold;
   color: #fff;
-  background: #4caf50;
-  padding: 0px 0px;
-  border-radius: 20px;
+  border: 2px solid #f7941d;
+  padding: 5px 10px;
+  border-radius: 50px;
   position: relative; 
 }
 
+#parent {
+  height: 80px;
+  white-space: nowrap;
+  overflow: hidden; 
+  font-family: 'Source Code Pro', monospace;  
+  font-size: 50px;
+  color: rgba(255,255,255,.70);
+  position: relative;
+}
 
-.login-trigger2 {
-  font-weight: bold;
-  color: #fff;
-  background: #f54967;
-  padding: 0px 0px;
-  border-radius: 20px;
-  position: relative; 
+#border {
+  border-bottom: solid 3px rgba(0,255,0,.75);
+  position: absolute;
+  right: -7px;
+  width: 20px;
 }
-.login-trigger3 {
-  font-weight: bold;
-  color: #fff;
-  background: #328fa5;
-  padding: 0px 0px;
-  border-radius: 20px;
-  position: relative; 
+
+/* Animation */
+
+#parent{
+  animation: animated-text 2s steps(30,end) 1s 1 normal both
 }
-/*Modal*/
-h4 {
-  font-weight: bold;
-  color: #fff;
+
+#border {
+   animation: animated-cursor 600ms steps(30,end) infinite;
 }
-.close1 {
-  color: #fff;
-  transform: scale(1.2)
+
+/* text animation */
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 480px;}
 }
-.modal-content1 {
-  font-weight: lighter;
-  background: linear-gradient(to bottom right,#77b300,#223300);
+
+/* cursor animations */
+
+@keyframes animated-cursor{
+  from{border-bottom-color: white;}
+  to{border-bottom-color: transparent;}
 }
-img.m-left {
-    float: left;
-    margin: 0 25px 20px 0;
+
+
+.sectionClass {
+  padding: 20px 0px 50px 0px;
+  position: relative;
+  display: block;
 }
-img.m-right {
-    float: right;
-    margin: 0 0 20px 25px;
+
+.fullWidth {
+  width: 100% !important;
+  display: table;
+  float: none;
+  padding: 0;
+  min-height: 1px;
+  height: 100%;
+  position: relative;
 }
-.form-control1 {
-  margin: 1em 0;
+
+
+.sectiontitle {
+  background-position: center;
+  margin: 30px 0 0px;
+  text-align: center;
+  min-height: 20px;
 }
-.form-control1:hover, .form-control1:focus {
-  box-shadow: none;  
-  border-color: #fff;
+
+.sectiontitle h2 {
+  font-size: 30px;
+  color: #222;
+  margin-bottom: 0px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
-.username1, .password1 {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  border-bottom: 2px solid #eee;
-  padding-left: 0;
-  font-weight: normal;
-  background: transparent;  
+
+
+.headerLine {
+  width: 160px;
+  height: 2px;
+  display: inline-block;
+  background: #101F2E;
 }
-.form-control1::-webkit-input-placeholder {
-  color: #eee;  
+
+
+.projectFactsWrap{
+    display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.form-control1:focus::-webkit-input-placeholder {
-  font-weight: bold;
-  color: #fff;
+
+
+#projectFacts .fullWidth{
+  padding: 0;
 }
-.login1 {
-  padding: 6px 20px;
-  border-radius: 20px;
-  background: none;
-  border: 2px solid #FAB87F;
-  color: #FAB87F;
-  font-weight: bold;
-  transition: all .5s;
-  margin-top: 1em;
-}
-.login1:hover {
-  background: #FAB87F;
-  color: #fff;
-}
-.contento {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.slider-wrapper {
-  font-size: 2.5vw;
-  color:#aaa;
-  font-weight: bold;
-  text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.slider{
-  font-size: calc(20px + 1vw);
-  height: 50px;
-  padding-left:15px;
-  overflow: hidden;
-  line-height: 45px;
-}
-.slider div {
-  color:#fff;
-  height: 50px;
-  margin-bottom: 50px;
-  padding: 2px 15px;
-  text-align: left;
-  box-sizing: border-box;
-}
-.slider-text1 {
-  animation: slide 7s linear infinite;
-}
-.fix-text{
+
+.projectFactsWrap .item{
+  width: 25%;
+  height: 100%;
+  padding: 50px 0px;
   text-align: center;
 }
-.slider-text2 {
-  
+
+.projectFactsWrap .item:nth-child(1){
+  background: rgb(16, 31, 46);
 }
-.slider-text3 {
-  
+
+.projectFactsWrap .item:nth-child(2){
+  background: rgb(18, 34, 51);
 }
-.slider-text4 {
-  
+
+.projectFactsWrap .item:nth-child(3){
+  background: rgb(21, 38, 56);
 }
-@keyframes slide {
-  0% {margin-top:-400px;}
-  4% {margin-top:-300px;}
-  25% {margin-top:-300px;}
-  29% {margin-top:-200px;}
-  50% {margin-top:-200px;}
-  54% {margin-top:-100px;}
-  75% {margin-top:-100px;}
-  79% {margin-top:0px;}
-  100% {margin-top:0px;}
+
+.projectFactsWrap .item:nth-child(4){
+  background: rgb(23, 44, 66);
 }
-.close2 {
-  color: #fff;
-  transform: scale(1.2)
-}
-.modal-content2 {
-  font-weight: lighter;
-  background: linear-gradient(to bottom right,#ff8095, #ff4d6a);
-}
-.form-control2 {
-  margin: 1em 0;
-}
-.form-control2:hover, .form-control2:focus {
-  box-shadow: none;  
-  border-color: #fff;
-}
-.username2, .password2 {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  border-bottom: 2px solid #eee;
-  padding-left: 0;
-  font-weight: normal;
-  background: transparent;  
-}
-.form-control2::-webkit-input-placeholder {
-  color: #eee;  
-}
-.form-control2:focus::-webkit-input-placeholder {
+
+.projectFactsWrap .item p.number{
+  font-size: 40px;
+  padding: 0;
   font-weight: bold;
-  color: #fff;
 }
-.login2 {
-  padding: 6px 20px;
-  border-radius: 20px;
-  background: none;
-  border: 2px solid #FAB87F;
-  color: #FAB87F;
-  font-weight: bold;
-  transition: all .5s;
-  margin-top: 1em;
-}
-.login2:hover {
-  background: #FAB87F;
-  color: #fff;
-}
-.close3 {
-  color: #fff;
-  transform: scale(1.2)
-}
-.modal-content3 {
-  font-weight: lighter;
-  background: linear-gradient(to bottom right,#2d93b9,#195267);
-}
-.form-control3 {
-  margin: 1em 0;
-}
-.form-control3:hover, .form-control3:focus {
-  box-shadow: none;  
-  border-color: #fff;
-}
-.username3, .password3 {
-  border: none;
-  border-radius: 0;
-  box-shadow: none;
-  border-bottom: 2px solid #eee;
-  padding-left: 0;
-  font-weight: normal;
-  background: transparent;  
-}
-.form-control3::-webkit-input-placeholder {
-  color: #eee;  
-}
-.form-control3:focus::-webkit-input-placeholder {
-  font-weight: bold;
-  color: #fff;
-}
-.login3 {
-  padding: 6px 20px;
-  border-radius: 20px;
-  background: none;
-  border: 2px solid #FAB87F;
-  color: #FAB87F;
-  font-weight: bold;
-  transition: all .5s;
-  margin-top: 1em;
-}
-.login3:hover {
-  background: #FAB87F;
-  color: #fff;
-}
-.container1
-{
-    position: relative;
-    width: 100%; 
-    height: 100%;
-}
-.container1 .box1
-{
-    position: relative;
-    width: calc(370px - 30px);
-    height: calc(400px - 30px);
-    background: #000;
-    display: inline-block;
-    margin: 15px;
-    box-sizing: border-box;
-    overflow: hidden;
-    border-radius: 10px;
-}
-.container1 .box1 .icon
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f00;
-    transition: 0.5s;
-    z-index: 1;
-}
-.container1 .box1:hover .icon
-{
-    top: 20px;
-    left: calc(50% - 40px);
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-}
-.container1 .box1 .icon .fa
-{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    font-size: 80px;
-    transition: 0.5s;
-    color: #fff;
-}
-.container1 .box1:hover .icon .fa
-{
-    font-size: 40px;
-}
-.container1 .box1 .content1
-{
-    position: absolute;
-    top: 100%;
-    height: calc(100% - 100px);
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    transition: 0.5s;
-    opacity: 0;
-}
-.container1 .box1:hover .content1
-{
-    top: 100px;
-    opacity: 1;
-}
-.container1 .box1 .content1 h3
-{
-    margin: 0 0 10px;
-    padding: 0;
-    color: #fff;
-    font-size: 24px;
-}
-.container1 .box1 .content1 p
-{
-    margin: 0;
-    padding: 0;
-    color: #fff;
+
+.projectFactsWrap .item p{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+  margin: 0;
+  padding: 10px;
+  font-family: 'Open Sans';
 }
 
 
-.container1 .box1:nth-child(1) .icon
-{
-  
-    background: #319635;
-}
-.container1 .box1:nth-child(1)
-{
-  
-    background: #4caf50;
-}
-.container1 .box1:nth-child(2) .icon
-{
-    background: #d03852;
-}
-.container1 .box1:nth-child(2)
-{
-    background: #f54967;
-}
-.container1 .box1:nth-child(3) .icon
-{
-    background: #23798e;
-}
-.container1 .box1:nth-child(3)
-{
-    background: #328fa5;
+.projectFactsWrap .item span{
+  width: 60px;
+  background: rgba(255, 255, 255, 0.8);
+  height: 2px;
+  display: block;
+  margin: 0 auto;
 }
 
-	 .logo-image{
-   padding-top: 17px; 
-    height: 80px;
-    overflow: hidden;
-    opacity: 1;
-    margin-top: 0px;
+
+.projectFactsWrap .item i{
+  vertical-align: middle;
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.projectFactsWrap .item:hover i, .projectFactsWrap .item:hover p{
+  color: white;
+}
+
+.projectFactsWrap .item:hover span{
+  background: white;
+}
+
+@media (max-width: 786px){
+  .projectFactsWrap .item {
+     flex: 0 0 50%;
+  }
+}
+
+
+
+.logo-image{
+  padding-top: 17px; 
+  height: 80px;
+  overflow: hidden;
+  opacity: 1;
+  margin-top: 0px;
+}
+.visionFull{
+  font-size: calc(1vw + 40px);
 }
 
 </style>
+<script>
+
+var i1 = 0;
+var i2 = 0;
+var i3 = 0;
+var i4 = 0;
+var i5 = 0;
+var i6 = 0;
+var txt1 = 'Vision';
+var txt2 = 'Integrated';
+var txt3 = 'Systems';
+var txt4 = 'In';
+var txt5 = 'Outdoor';
+var txt6 = 'Navigation';
+var speed = 400;
+
+function V() {
+  if (i1 < txt1.length) {
+    document.getElementById("demo1").innerHTML += txt1.charAt(i1);
+    i1++;
+    setTimeout(V, speed);
+  }
+}
+function t() {
+  if (i2 < txt2.length) {
+    document.getElementById("demo2").innerHTML += txt2.charAt(i2);
+    i2++;
+    setTimeout(t, speed);
+  }
+}
+function e() {
+  if (i3 < txt3.length) {
+    document.getElementById("demo3").innerHTML += txt3.charAt(i3);
+    i3++;
+    setTimeout(e, speed);
+  }
+}
+function w() {
+  if (i4 < txt4.length) {
+    document.getElementById("demo4").innerHTML += txt4.charAt(i4);
+    i4++;
+    setTimeout(w, speed);
+  }
+}
+function a() {
+  if (i5 < txt5.length) {
+    document.getElementById("demo5").innerHTML += txt5.charAt(i5);
+    i5++;
+    setTimeout(a, speed);
+  }
+}
+function r() {
+  if (i6 < txt6.length) {
+    document.getElementById("demo6").innerHTML += txt6.charAt(i6);
+    i6++;
+    setTimeout(r, speed);
+  }
+}
+
+function myfunction(){
+  V();
+   t();
+   e();
+   w();
+   a();
+   r();
+ 
+  $.fn.jQuerySimpleCounter = function( options ) {
+        var settings = $.extend({
+            start:  0,
+            end:    100,
+            easing: 'swing',
+            duration: 400,
+            complete: ''
+        }, options );
+  
+        var thisElement = $(this);
+  
+        $({count: settings.start}).animate({count: settings.end}, {
+        duration: settings.duration,
+        easing: settings.easing,
+        step: function() {
+          var mathCount = Math.ceil(this.count);
+          thisElement.text(mathCount);
+        },
+        complete: settings.complete
+      });
+    };
+  
+  $('#number3').jQuerySimpleCounter({end: 317,duration:10000});
+  $('#number1').jQuerySimpleCounter({end: 6,duration: 10000});
+  $('#number2').jQuerySimpleCounter({end: 37,duration: 10000});
+  $('#number4').jQuerySimpleCounter({end: 2,duration: 10000});
+  
+  }
+  
+  </script>
+  
+
 </head>
-<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-<div id="overlayer">
-    <div class="loader">
-        Loading...
-    </div>
-</div>
-<div class="site-wrap">
-<div class="site-mobile-menu site-navbar-target">
-<div class="site-mobile-menu-header">
-<div class="site-mobile-menu-close mt-3">
-<span class="icon-close2 js-menu-toggle"></span>
-</div>
-</div>
-<div class="site-mobile-menu-body"></div>
-</div>
-<header class="site-navbar js-sticky-header site-navbar-target" role="banner">
-<div class="container">
-<div class="row align-items-center">
-<div class="col-6 col-xl-2">
-<h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0"><img src="img/visionfinal.png" class="logo-image"></a></h1>
-</div>
-<div class="col-12 col-md-10 d-none d-xl-block">
-<nav class="site-navigation position-relative text-right" role="navigation">
-<ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-<li><a href="#home-section" class="nav-link" style="color: #007bff;">Home</a></li>
-<li><a href="#about-section" class="nav-link">About Us</a></li>
-<li><a href="#blog-section" class="nav-link">Blog</a></li>
-<!-- <li><a href="alumni.html" class="nav-link">Alumni</a></li> -->
-<li><a href="team.html" class="nav-link">Team</a></li>
-<li><a href="gallery.html" class="nav-link">Gallery</a></li>
-<li class="social"><a href="https://www.facebook.com/igvc.iitk/" class="nav-link" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-<li class="social"><a href="https://www.youtube.com/channel/UCrQoKMEBySfXPEqXGk-CZ8A" class="nav-link" target="_blank"><i class="fab fa-youtube"></i></a></li>
-<li class="social"><a href="https://au.linkedin.com/company/igvc-iitk" class="nav-link" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-<li class="social"><a href="https://github.com/IGVC-IITK" class="nav-link" target="_blank"><i class="fab fa-github"></i></a></li>
-</ul>
-</nav>
-</div>
-<div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="fas fa-bars"></span></a></div>
-</div>
-</div>
-</header>
-<div class="site-blocks-cover overlay" style="background-image: url(img/banner.jpg); background-attachment: fixed;background-position-y: top; padding-top: 100px;" data-aos="fade" id="home-section">
-<div class="container">
-<div class="row align-items-center justify-content-center">
-<div class="col-md-10 mt-lg-5 text-center">
-<div class="single-text owl-carousel">
-<div class="slide">
-<h1 class="text-uppercase" data-aos="fade-up">IGVC</h1>
-<p class="mb-5 desc" data-aos="fade-up" data-aos-delay="100">The Intelligent Ground Vehicle Competition is an annual international robotics competition for teams of undergraduate and graduate students. Teams design and build an autonomous ground vehicle capable of completing several difficult challenges.</p>
-<div data-aos="fade-up" data-aos-delay="100">
-<a href="http://www.igvc.org" target="_blank" class="btn  btn-primary mr-2 mb-2">Know more</a>
-</div>
-</div>
-<div class="slide">
-<h1 class="text-uppercase" data-aos="fade-up">NASA Space Robotics Challange</h1>
-<p class="mb-5 desc" data-aos="fade-up" data-aos-delay="100">The Space Robotics Challenge is a virtual competition to advance robotic software and autonomous capabilities for space exploration missions on the surface of extraterrestrial objects, such as distant planets or moons.</p>
-<div data-aos="fade-up" data-aos-delay="100">
-<a href="https://www.nasa.gov/directorates/spacetech/centennial_challenges/space_robotics/index.html" target="_blank" class="btn  btn-primary mr-2 mb-2">Know more</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<a href="#about-section" class="mouse smoothscroll">
-<span class="mouse-icon">
-<span class="mouse-wheel"></span>
-</span>
-</a>
-</div>
-<div class="site-section cta-big-image" id="about-section">
-<div class="container">
-<div class="row mb-5 justify-content-center">
-<div class="col-md-8 text-center">
-<h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">About Us</h2>
-</div>
-</div>
-<div class="row">
-<div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
-<figure class="circle-bg" >
-<img src="img/IGVC.jpg" alt="Free Website Template by Free-Template.co" class="img-fluid">
-</figure>
-</div>
-<div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-<h3 class="" style="color: greenyellow ">Who Are We?</h3>
-<p>Team VISiON (previously Team IGVC-IITK), a robotics team from IIT Kanpur is a group of highly motivated students with a passion for robotics consisting of Undergraduate Students and Faculty Advisor, working in the field of autonomous ground vehicles to participate in the Intelligent Ground Vehicle Competition (IGVC), which is being held at Oakland University, Michigan, USA pointer-eventsry year in June for the past 26 years. Approximately 40 teams typically from India, Europe, and the USA participate in this competition. We are also aiming to participate in NASA Space Robotics Challenge which is a virtual competition to advance robotic software and autonomous capabilities for space exploration missions on the surface of extraterrestrial objects, such as distant planets or moons.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="login1" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-    
-    <div class="modal-content1">
-      <div class="modal-body">
-        <button data-dismiss="modal" class="close">&times;</button>
-        <div class="content">
-		<div class="layout">
-			<h2>Our performance & legacy ...</h2>
-			<h4 class="lined margin-20">IGVC 2019</h4>
-			<!-- Image Left-Aligned -->
-			<div style="overflow: auto;">
-			<img src="img/igvc1.jpg" alt="" class="m-left" style="width:30%">
-			<!-- End Image Left-Aligned -->
-			
-			<div class="slider-wrapper">
-        <div class="fix-text">
-        We secured
+<body onload="myfunction()" class="preload"   data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div id="overlayer">
+        <div class="loader">
+            Loading...
         </div>
-			  <div class="slider">
-				  <div class="slider-text1">4<sup>th</sup> in Cyber</div>
-				  <div class="slider-text2">3<sup>rd</sup> in IOP</div>
-          <div class="slider-text3">3<sup>rd</sup> in AutoNav</div>
-          <div class="slider-text4">2<sup>nd</sup> in Grand</div>
-			 </div>       
-			 </div>
-			</div>
-			<div class="gap" style="height: 30px;">
-			</div>
-			<div style="overflow: auto;">
-			<h4 class="lined margin-20">IGVC 2018 </h4>
-			<!-- Image Right-Aligned -->
-			<img src="img/prize.jpg" alt="" style="width:30%" class="m-right">
-			<!-- End Image Right-Aligned -->
-			<p>
-			We are actively exploring and testing new SLAM algorithms like using Particle Filters(Monte Carlo methods) 
-			in place of Kalman filters or completely moving to visual based SLAM algorithms or integrating these two.
-			</p>
-			</div>
-			<div class="gap" style="height: 30px;">
-			</div>
-			<div style="overflow: auto;">
-			<h4 class="lined margin-20">ABU Robocon </h4>
-			<!-- Image Right-Aligned -->
-			<img src="img/info/robocon.jpg" alt="" style="width:30%" class="m-left">
-			<!-- End Image Right-Aligned -->
-			<p>
-			We were previously the IIT kanpur team for ABU Robocon, where we have achieved 3rd rank nationally among 108 teams.
-			</p>
-			
-			</div>
-			<div class="gap" style="height: 30px;">
-			</div>
-		</div>
-	</div>
-        
     </div>
-  </div>  
-</div>
-</div>
-
-
-
-<div id="login2" class="modal fades" role="dialog">
-  <div class="modal-dialog">
-    
-    <div class="modal-content2">
-      <div class="modal-body">
-        <button data-dismiss="modal" class="close">&times;</button>
-		<div class="content">
-		<div class="layout">
-			<h2>What we do here ...</h2>
-			<h4 class="lined margin-20">Computer Vision</h4>
-			<!-- Image Left-Aligned -->
-			<div style="overflow: auto;">
-			<img src="images/compvision.png" alt="" class="m-left" style="width:30%">
-			<!-- End Image Left-Aligned -->
-			<p>Computer vision is an interdisciplinary scientific field that deals with how computers can be made to gain a high-level understanding from digital images or videos. 
-				  This domain forms a very integral component of our setup. Our endeavor to make a self navigable robot involves first taking input from the local surroundings and then making sense of it.
-				  Currently, we have implemented Fast Segmentation Neural Network (Fast SCNN).</p>
-			<p>Its selling point over conventional neural network models is that it parses inputs quickly to facilitate quick responsive interactivity with the environment.
-			Our Fast-SCNN uses learning to downsample module, a coarse global feature extractor, a feature fusion module, and a standard classifier. This is a very recent and sophisticated model and the current industry standard. 
-			</p>
-			</div>
-			<div class="gap" style="height: 30px;">
-			</div>
-			<div style="overflow: auto;">
-			<h4 class="lined margin-20">Simultaneous Localization and Mapping (SLAM) </h4>
-			<!-- Image Right-Aligned -->
-			<img src="images/slamimg2.png" alt="" style="width:30%" class="m-right">
-			<!-- End Image Right-Aligned -->
-			<p>
-			SLAM is one of the hardest parts of autonomous navigation as it involves mapping the environment while also
-			simultaneously keeping track of bots position in it. We use data from a  2D-lidar sensor for detecting obstacles 
-			and combine it with the current motion of the robot to predict the map and location of the bot in it.
-			We use Bayesian probabilistic models for it and for approximating the equations we apply Kalman filters. 
-			</p>
-			<p>
-			We are actively exploring and testing new SLAM algorithms like using Particle Filters(Monte Carlo methods) 
-			in place of Kalman filters or completely moving to visual based SLAM algorithms or integrating these two.
-			</p>
-			</div>
-			<div class="gap" style="height: 30px;">
-			</div>
-			<div style="overflow: auto;">
-			<h4 class="lined margin-20">Path Planning and Control </h4>
-			<!-- Image Right-Aligned -->
-			<img src="images/mappimg2.png" alt="" style="width:30%" class="m-left">
-			<!-- End Image Right-Aligned -->
-			<p>The algorithm that we use in path planning is Bi-RRT (Bidirectional Rapidly Exploring Random Tree), which uses the map
-			, bot and target position generated by SLAM algorithm.RRT algorithm was chosen over others because it is fast and non-holonomic 
-			constraints could easily be applied to it. The tree is constructed incrementally from samples drawn randomly from the search 
-			space and is inherently biased to grow towards large unsearched areas of the problem. The algorithm gives us a piecewise straight
-			path between source and target. We can have an infinite angular acceleration of bot at corners and hence spline interpolation 
-			technique is applied on the path. This technique is used to make the path smooth in such a way that it becomes second order continuous
-			and hence prevents the existence of infinite acceleration in the entire path. In the future, we aim to use various curve fitting like 
-			polynomial, Gaussian and Fourier fitting individually or simultaneously on nodes generated by RRT and use methods like LAR and Bi-Square
-			to improve robustness of the generated path.
-			</p>
-			<p>
-			For high-level path following controller, a non-linear unicycle controller was chosen over the usual PID as it performed decently and
-			was easier to tune.
-			</p>
-			
-			</div>
-			<div class="gap" style="height: 30px;">
-			</div>
-		</div>
-	</div>
-      </div>
+    <div class="site-wrap">
+    <div class="site-mobile-menu site-navbar-target">
+    <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close mt-3">
+    <span class="icon-close2 js-menu-toggle"></span>
     </div>
-  </div>  
-</div>
-
-
-
-<div id="login3" class="modal fade" role="dialog">
-  <div class="modal-dialog">
+    </div>
+    <div class="site-mobile-menu-body"></div>
+    </div>
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+    <div class="container">
+    <div class="row align-items-center">
+    <div class="col-6 col-xl-2">
+    <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0"><img src="img/visionfinal.png" class="logo-image"></a></h1>
+    </div>
+    <div class="col-12 col-md-10 d-none d-xl-block">
+    <nav class="site-navigation position-relative text-right" role="navigation">
+    <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+    <li><a href="#home-section" class="nav-link" style="color: #007bff;">Home</a></li>
+    <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+    <li><a href="blog.html" class="nav-link">Blog</a></li>
+     <li><a href="time.html" class="nav-link">Legacy</a></li>
+    <li><a href="team.html" class="nav-link">Team</a></li>
+    <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+    <li class="social"><a href="https://www.facebook.com/igvc.iitk/" class="nav-link" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+    <li class="social"><a href="https://www.youtube.com/channel/UCrQoKMEBySfXPEqXGk-CZ8A" class="nav-link" target="_blank"><i class="fab fa-youtube"></i></a></li>
+    <li class="social"><a href="https://au.linkedin.com/company/igvc-iitk" class="nav-link" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+    <li class="social"><a href="https://github.com/IGVC-IITK" class="nav-link" target="_blank"><i class="fab fa-github"></i></a></li>
+    </ul>
+    </nav>
+    </div>
+    <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="fas fa-bars"></span></a></div>
+    </div>
+    </div>
+    </header>
+    <div class="site-blocks-cover overlay" style="background-color: #212529; background-attachment: fixed; " data-aos="fade" id="home-section">
+    <div id="particles-js"></div>
+    <div style="display:inline-block; width: 100vw;">
+        <div style="background:rgba(255, 255, 255, 0.226); width: 40vw; height: 100vh; float: left; 
+        clip-path: polygon(0% 0%, 0% 100%, 65% 100%, 100% 0%);">
+        <img src="images/logo.png" class="unselectable"style="width:30vw; padding-top: 20vh; padding-left: 5vw;" alt="">    
+      </div>
+      <div style="width: 60vw; height: 100vh; float: left;">
+          <div style="height: 100vh; display: table;">
+              <div style="display: table-cell;
+              vertical-align: middle; align-content: center;">  
+                <p id="demo1" class="visionFull"></p>
+                <p id="demo2" class="visionFull"></p>
+                <p id="demo3" class="visionFull"></p>
+                <p id="demo4" class="visionFull"></p>
+                <p id="demo5" class="visionFull"></p>
+                <p id="demo6" class="visionFull"></p>
+              </div>
+            </div>
+        </div>
+    </div>
     
-    <div class="modal-content3">
-      <div class="modal-body">
-        <button data-dismiss="modal" class="close">&times;</button>
-        <div class="content">
-		<div class="layout">
-			<h2>Future aspects of team</h2>
-			<div class="gap" style="height: 30px;">
+    <a href="#about-section" class="mouse smoothscroll" style="z-index: 100;">
+    <span class="mouse-icon">
+    <span class="mouse-wheel"></span>
+    </span>
+    </a>
+    </div>
+
+
+
+
+
+  
+
+
+
+
+
+
+
+    <div class="site-section cta-big-image" id="about-section">
+    <div class="container">
+    <div class="row mb-5 justify-content-center">
+    <div class="col-md-8 text-center">
+    <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">About Us</h2>
+    </div>
+    </div>
+<!--  -->
+<section id="about" class="who-we-are section-padding menu-fix">
+    <div class="container">
+      <div class="row">
+        <div class="wow zoomIn col-xs-12 col-lg-12 text-center p-padding animated" style="visibility: visible; animation-name: zoomIn; margin-bottom: 8vh;">
+          <p style="font-size: 18px;">We are a team of dedicated students, sharing a channelized aim of competing at the prestigious “ROBOCON”. Our thinktank includes innovative members, with a concrete vision for approach and execution. We have hands on experience in multitude of electromechanical apparatus and equipment.  We are always in pursuit of creative thinkers and designers, with a view to expanding and refining the troupe. </p>
+          <a class="login-trigger1" href="aboutus.html" data-target="__blank" data-toggle="modal">Know More..</a>  
+        </div><!-- col-xs-12 -->
+        <div class="wow zoomIn col-xs-12 col-sm-6 col-md-2 text-center animated" style="visibility: visible; animation-name: zoomIn; margin-top:15px; ">
+          <div class="icon-circle" style="padding-bottom: 10px">
+            <i class="newfa fa">V</i>
+          </div><!-- /.icon-circle -->
+          <div class="who-we-are-content text-center">
+            <p style="font-size: 1rem; color: greenyellow;">Versatility</p>
+            <p style="font-size: 15px">
+                Diversification of skill sets involving an ambient and basic working knowledge of the entire working mechanism of an autonomous vehicle.
+            </p>
+          </div><!-- /.who-we-are-content -->
+        </div><!-- /.col-xs-6 -->
+        <div class="wow zoomIn col-xs-12 col-sm-6 col-md-2 text-center animated" style="visibility: visible; animation-name: zoomIn; margin-top:15px;">
+          <div class="icon-circle" style="padding-bottom: 10px">
+            <i class="newfa fa">I</i>
+          </div><!-- /.icon-circle -->
+          <div class="who-we-are-content text-center">
+            <p style="font-size: 1rem; color: greenyellow;">Impeccable </p>
+            <p style="font-size: 15px">
+                Whatever we do, we strive to do a flawless job. There really is no room for errors when you are handling such a complicated system.
+            </p>
+          </div><!-- /.who-we-are-content -->
+        </div><!-- /.col-xs-6 -->
+        <div class="wow zoomIn col-xs-12 col-sm-6 col-md-2 text-center animated" style="visibility: visible; animation-name: zoomIn; margin-top:15px;">
+          <div class="icon-circle" style="padding-bottom: 10px">
+            <i class="fa newfa">S</i>
+          </div><!-- /.icon-circle -->
+          <div class="who-we-are-content text-center">
+            <p style="font-size: 1rem; color: greenyellow;">Sanguinity</p>
+            <p style="font-size: 15px">
+                Always open to new ideas and willingness to embrace change.
+            </p>
+          </div><!-- /.who-we-are-content -->
+        </div><!-- /.col-xs-6 -->
+        <div class="wow zoomIn col-xs-12 col-sm-6 col-md-2 text-center animated" style="visibility: visible; animation-name: zoomIn; margin-top:15px;">
+          <div class="icon-circle" style="padding-bottom: 10px">
+            <i class="fa newfa">i</i>
+          </div><!-- /.icon-circle -->
+          <div class="who-we-are-content text-center">
+            <p style="font-size: 1rem; color: greenyellow;">Incredible</p>
+            <p style="font-size: 15px">
+                The kind of cutting edge technology we work with really seems to be taken directly out of science fiction.
+            </p>
+          </div><!-- /.who-we-are-content -->
+        </div><!-- /.col-xs-6 -->
+        <div class="wow zoomIn col-xs-12 col-sm-6 col-md-2 text-center animated" style="visibility: visible; animation-name: zoomIn; margin-top:15px;">
+          <div class="icon-circle" style="padding-bottom: 10px">
+            <i class="fa newfa">O</i>
+          </div><!-- /.icon-circle -->
+          <div class="who-we-are-content text-center">
+            <p style="font-size: 1rem; color: greenyellow;">Originality</p>
+            <p style="font-size: 15px">
+                Originality of thought is a cornerstone of our mission to a better tomorrow.    
+            </p>
+          </div><!-- /.who-we-are-content -->
+        </div><!-- /.col-xs-6 -->
+        <div class="wow zoomIn col-xs-12 col-sm-6 col-md-2 text-center animated" style="visibility: visible; animation-name: zoomIn; margin-top:15px;">
+          <div class="icon-circle" style="padding-bottom: 10px">
+            <i class="fa newfa">N</i>
+          </div><!-- /.icon-circle -->
+          <div class="who-we-are-content text-center">
+            <p style="font-size: 1rem; color: greenyellow;">Nobility</p>
+            <p style="font-size: 15px">
+                For us, safety of the user is our topmost priority. All our blood and sweat is dedicated to a comfortable future for mankind.
+            </p>
+          </div><!-- /.who-we-are-content -->
+        </div><!-- /.col-xs-6 -->
+      </div><!--/row-->
+    </div><!-- /container -->
+  </section>
+  <!--  -->
+    </div>
+    </div>
+
+    <div class="site-section cta-big-image">
+      <div class="container">
+      <div class="row mb-5 justify-content-center">
+      <div class="col-md-8 text-center">
+      <h2 class="section-title mb-3" data-aos="fade-up" data-aos-delay="">About IGVC</h2>
       </div>
-      <div style="overflow: auto;">
-			<h4 class="lined margin-20">Cyber Security</h4>
-			<!-- Image Left-Aligned -->
-			<div style="overflow: auto;">
-			<img src="img/info/csecurity.jpg" alt="" class="m-left" style="width:30%">
-			<!-- End Image Left-Aligned -->
-			<p>We are keen to work in the field of cybersecurity. We participated in the cybersecurity challenge of IGVC 2019 and secured 4th rank worldwide. 
-        We now have a subgroup in our team which devotes itself towards solving challenges in cybersecurity. We are looking forward to exploring and contribute toward cybersecurity.
-			</p>
       </div>
-			<div class="gap" style="height: 30px;">
-			</div>
-			<div style="overflow: auto;">
-			<h4 class="lined margin-20">Simulations of complex robots</h4>
-			<!-- Image Right-Aligned -->
-			<img src="img/info/rover.jpg" alt="" style="width:30%" class="m-left">
-			<!-- End Image Right-Aligned -->
-			<p>
-          We can't work on space rovers, humanoid bots, or autonomous rockets due to budget and time contraints. Well think again, 
-          with proper hardware we can simulate those to well enough accuracy. Our team has fervent interest in software simulation 
-          of the complex bots used in various disciplines like space rover, reinforced humanoid, etc.
-			</p>
-			
+      <div class="row">
+      <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="">
+      
+      <img src="images/fuck.png" style="border-radius: 15px;" alt="Free Website Template by Free-Template.co" class="img-fluid">
+      </figure>
       </div>
-          <h4 class="lined margin-20">Self-driving Car</h4>
-          <!-- Image Right-Aligned -->
-          <img src="img/info/selfdriving.jpg" alt="" style="width:30%" class="m-right">
-          <!-- End Image Right-Aligned -->
-          <p>
-            Autonomous vehicle i.e. the self driving car is the future of the automobile industry. We are aiming to participate in prominent
-            competitions that involve developing hardware and algorithms for the self-driving car.
-          </p>
+      <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
+      <h3 class="" style="color: greenyellow ">Who Are We?</h3>
+      <p>Team VISiON (previously Team IGVC-IITK), a robotics team from IIT Kanpur is a group of highly motivated students with a passion for robotics consisting of Undergraduate Students and Faculty Advisor, working in the field of autonomous ground vehicles to participate in the Intelligent Ground Vehicle Competition (IGVC), which is being held at Oakland University, Michigan, USA pointer-eventsry year in June for the past 26 years. Approximately 40 teams typically from India, Europe, and the USA participate in this competition. We are also aiming to participate in NASA Space Robotics Challenge which is a virtual competition to advance robotic software and autonomous capabilities for space exploration missions on the surface of extraterrestrial objects, such as distant planets or moons.</p>
+    </div>
+      </div>
+      
+
+
+
+      </div>
+      </div>
+
+
+    </div>
+    </div>
+
+  
+    <div id="projectFacts" class="sectionClass">
+      <div class="fullWidth eight columns">
+          <div class="projectFactsWrap ">
+              <div class="item wow fadeInUpBig animated animated" data-number="317" style="visibility: visible;">
+                  <i class="fa fa-user"></i>
+                  <p id="number3" class="number"></p>
+                  <span></span>
+                  <p>Participants</p>
+              </div>
+              <div class="item wow fadeInUpBig animated animated" data-number="37" style="visibility: visible;">
+                  <i class="fa fa-users"></i>
+                  <p id="number2" class="number">37</p>
+                  <span></span>
+                  <p>Teams</p>
+              </div>
+              <div class="item wow fadeInUpBig animated animated" data-number="6" style="visibility: visible;">
+                  <i class="fa fa-globe"></i>
+                  <p id="number1" class="number">6</p>
+                  <span></span>
+                  <p>Nations</p>
+              </div>
+              <div class="item wow fadeInUpBig animated animated" data-number="2" style="visibility: visible;">
+                  <i class="fa fa-trophy"></i>
+                  <p id="number4" class="number">2</p>
+                  <span></span>
+                  <p>Positon</p>
+              </div>
           </div>
-			<div class="gap" style="height: 30px;">
-			</div>
-		</div>
-	</div>
       </div>
-    </div>
-  </div>  
-</div>
-<div>
-<section class="site-section">
-	<div class="container">
-		<div class="row">
-        <center>
-<div class="container1">
-    <div class="box1">
-        <div class="icon"><img src="images/flaticon-svg/svg/icon.svg" alt="Free Website Template by Free-Template.co"></div>
-        <div class="content1">
-            <h3>PAST RECORD</h3>
-                        <p>
-    We debuted in IGVC in 2018 and achieved 5th rank in the design competition and 12th rank overall internationally among 36 teams.
-     </p>
-     <a class="login-trigger1" href="#" data-target="#login1" data-toggle="modal">Know More..</a>
-        </div>
-      </div>
-    <div class="box1">
-        <div class="icon"><img src="images/flaticon-svg/svg/team-leader.svg" alt="Free Website Template by Free-Template.co" ></div>
-        <div class="content1">
-            <h3>LEGACY</h3>
-            <p>We were previously the IIT kanpur team for ABU Robocon, where we have achieved 3rd rank nationally among 108 teams.</p>
-             <a class="login-trigger2" href="#" data-target="#login2" data-toggle="modal">Know More..</a>
-        </div>
-      </div>
-    <div class="box1">
-        <div class="icon"><img src="images/flaticon-svg/svg/innovation.svg" alt="Free Website Template by Free-Template.co"></div>
-        <div class="content1">
-            <h3>EAGERNESS TO LEARN</h3>
-            <p>We are a group of highly motivated students with a passion for robotics and always try to learn new things through our journey.</p>
-             <a class="login-trigger3" href="#" data-target="#login3" data-toggle="modal">Know More..</a>
-        </div>
-      </div>
-</div>
-</center>
-</div>
-</div>
-</section>
-<section class="site-section" id="blog-section" style="position: relative;">
-<div class="container">
-<div class="row mb-5">
-<div class="col-12 text-center" data-aos="fade">
-<h2 class="section-title mb-3">Our Blog</h2>
-</div>
-</div>
-<div class="row">
-<div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="">
-<div class="h-entry">
-<a href="img/ros.png">
-<img src="img/ros.png" alt="Image" class="img-fluid">
-</a>
-<h2 class="font-size-regular"><a href="#" style="color: greenyellow">What is ROS?</a></h2>
-<!-- <div class="meta mb-4">Ham Brook <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
- --><p>The Robot Operating System (ROS) is a set of software libraries and tools that help you build robot applications. From drivers to state-of-the-art algorithms, and with powerful developer tools, ROS has what you need for your next robotics project. And it's all open source.
- </p>
-<p><a href="https://www.ros.org/" target="_blank">Continue Reading...</a></p>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="100">
-<div class="h-entry">
-<a href="img/pid.png">
-<img src="img/pid.png" alt="Image" class="img-fluid">
-</a>
-<h2 class="font-size-regular"><a href="#" style="color: greenyellow">Why Use PID?</a></h2>
-<!-- <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
- --><p>PID Control stands for Proportional-Integral-Derivative feedback control and corresponds to one of the most commonly used controllers used in industry. It's success is based on its capacity to efficiently and robustly control a variety of processes and dynamic systems, while having...</p>
-<p><a href="https://www.autonomousrobotslab.com/pid-control.html" target="_blank" >Continue Reading...</a></p>
-</div>
-</div>
-<div class="col-md-6 col-lg-4 mb-4 mb-lg-4" data-aos="fade-up" data-aos-delay="200">
-<div class="h-entry">
-<a href="img/ard.jpeg">
-<img src="img/ard.jpeg" alt="Image" class="img-fluid">
-</a>
-<h2 class="font-size-regular"><a href="#" style="color: greenyellow">What is arduino?</a></h2>
-<!-- <div class="meta mb-4">James Phelps <span class="mx-2">&bullet;</span> Jan 18, 2019<span class="mx-2">&bullet;</span> <a href="#">News</a></div>
- --><p>Arduino is an open-source electronics platform based on easy-to-use hardware and software. Arduino boards are able to read inputs - light on a sensor, a finger on a button, or a Twitter message - and turn it into an output - activating a motor, turning on an LED, publishing something online. You can te...</p>
-<p><a href="https://www.arduino.cc/" target="_blank">Continue Reading...</a></p>
-</div>
-</div>
-</div>
-</div>
-</section>
+  </div>
+
 <footer style="background-color: black">
 <div class="container">
 	<div class="row">
-  <div style="background-color:black">
+  <div style="background-color:black; padding:3vh;">
       <div class="row text-center text-lg-left">
           <div class="col-lg-4 text-lg-right border-right">
               <h1 style="color: greenyellow">Team VISION</h1>
@@ -795,27 +654,14 @@ img.m-right {
               </form>
               <hr class="hr-red d-lg-none">
           </div>
-          <div class="col-lg-4">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Figvc.IITK&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=322731122009353" width="360" height="350" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-
-              <!--- <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/search?q=SAE%20IIT%20Kanpur%2C%20Sixth%20Avenue%2C%20Kalyanpur%2C%20Kanpur%2C%20Uttar%20Pradesh%2C%20India&key=AIzaSyDPEFC1E9_nSGLSgRHaCm4AP-5DCPYDRxY" allowfullscreen></iframe> -->
-          </div>
-
+         
       </div>
   </div>
 </div>
 </div>
 </footer>
-
-
-
-
-
-
-
-
-</div> 
-<script src="js/jquery-3.3.1.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+</div>
+<!-- <script src="js/jquery-3.3.1.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script> -->
 <script src="js/jquery-ui.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
 <script src="js/popper.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
 <script src="js/bootstrap.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
@@ -827,6 +673,8 @@ img.m-right {
 <script src="js/jquery.sticky.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
 <script src="js/isotope.pkgd.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
 <script src="js/main.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+<script src="js/particles.min.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
 <script type="6a9fa9fbb3e34339c849d587-text/javascript">
   window.dataLayer = window.dataLayer || [];
@@ -835,8 +683,19 @@ img.m-right {
 
   gtag('config', 'UA-23581568-13');
 </script>
+<script type="text/javascript">
+  // made by chappu Panda
+      $(document).ready(function(){
+        $(window).scroll(function() { // check if scroll event happened
+          if ($(document).scrollTop() > 1) { // check if user scrolled more than 50 from top of the browser window
+            $(".logo-image").attr("src", "img/visionfinal.png"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+          } else {
+            $(".logo-image").attr("src", "img/visionfinal_white.png"); // if not, change it back to transparent
+          }
+        });
+      });
+  </script>
 <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="6a9fa9fbb3e34339c849d587-|49" defer=""></script>
-
 
 
 </body>

@@ -1,4 +1,17 @@
 /* Base */
+input, textarea{
+  background-color: #21252A;
+  border: none;
+  padding: 2px;
+}
+
+.unselectable{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
 html {
   overflow-x: hidden; }
 
@@ -9,6 +22,7 @@ body {
   font-size: 1rem; 
  background-color: #131214;
  color: white;
+ text-align: justify;
 }
 
 ::-moz-selection {
@@ -102,7 +116,7 @@ body:after {
   padding: 2.5em 0; }
   @media (min-width: 768px) {
     .site-section {
-      padding: 8em 0; } }
+      padding: 3em 0; } }
   .site-section.site-section-sm {
     padding: 4em 0; }
 
@@ -187,7 +201,8 @@ body:after {
       bottom: 0;
       z-index: 0;
       width: 100%;
-      background: rgba(0, 0, 0, 0.7); }
+      background: rgba(0, 0, 0, 0.7); 
+    opacity: 0.4;}
   .bg-image > .container {
     position: relative;
     z-index: 1; }
@@ -595,11 +610,6 @@ body:after {
     @media (max-width: 991.98px) {
       .site-blocks-cover h1 {
         font-size: 2rem; } }
-  .site-blocks-cover p {
-    color: white;
-    font-size: 1rem;
-    line-height: 1.5;
-    font-weight: 300; }
   .site-blocks-cover .desc {
     font-size: 1.4rem;
     font-weight: 300; }
@@ -2077,14 +2087,14 @@ figure figcaption {
   .loader,
 .loader:before,
 .loader:after {
-  background: greenyellow;
+  background: #F7941D;
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 1.4em;
   height: 5.5em;
 }
 .loader {
-  color: greenyellow;
+  color: #F7941D;
   text-indent: -9999em;
   margin: 50vh auto;
   position: relative;
