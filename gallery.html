@@ -19,13 +19,22 @@
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/all.min.css">
 <style type="text/css">
-
+:root{
+  --w: calc(35vw + 30px);
+  --h: calc(0.6*var(--w));
+}
+@media only screen and (max-width: 530px){
+:root {
+  --w: calc(5vw + 250px);
+  --h: calc(0.6*var(--w));
+}
+}
 .scene {
   border: 1px solid #131214;
   margin: 40px 0;
   position: relative;
-  width: 630px;
-  height: 420px;
+  width: var(--w);
+  height: var(--h);
   margin: 100px auto;
   margin-bottom: 0px;
   perspective: 1000px;
@@ -42,8 +51,8 @@
 
 .carousel__cell {
   position: absolute;
-  width: 630px;
-  height: 420px;
+  width: var(--w);
+  height: var(--h);
   left: 0px;
   top: 0px;
 
@@ -54,9 +63,9 @@
   text-align: center;
   transition: transform 1s, opacity 1s;
 }
-
-
-
+.img-c{
+  height: var(--h); width: var(--w); opacity: 0.7;
+}
 .carousel__cell:nth-child(1) { transform: rotateY(  0deg) translateZ(288px); }
 .carousel__cell:nth-child(2) { transform: rotateY( 40deg) translateZ(288px); }
 .carousel__cell:nth-child(3) { transform: rotateY( 80deg) translateZ(288px); }
@@ -162,7 +171,7 @@
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get1" src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get1" src="img/prize.jpg">
 </a>
 </span>
 </span>   
@@ -170,7 +179,7 @@
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get2" src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get2" src="img/prize.jpg">
 </a>
 </span>
 </span>
@@ -178,91 +187,91 @@
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get3" src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get3" src="img/prize.jpg">
 </a>
 </span>
 </span>   <span class="item">
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get4" src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get4" src="img/prize.jpg">
 </a>
 </span>
 </span>   <span class="item">
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get5" src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get5" src="img/prize.jpg">
 </a>
 </span>
 </span>   <span class="item">
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid"  id="get6"src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c"  id="get6"src="img/prize.jpg">
 </a>
 </span>
 </span>   <span class="item">
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get7" src="img/banner.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get7" src="img/banner.jpg">
 </a>
 </span>
 </span>   <span class="item">
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get8" src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get8" src="img/prize.jpg">
 </a>
 </span>
 </span>   <span class="item">
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid"  id="get9"src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c"  id="get9"src="img/prize.jpg">
 </a>
 </span>
 </span>   <span class="item">
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get10" src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get10" src="img/prize.jpg">
 </a>
 </span>
 </span>   <span class="item">
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get11" src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get11" src="img/prize.jpg">
 </a>
 </span>
 </span>   <span class="item">
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get12" src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get12" src="img/prize.jpg">
 </a>
 </span>
 </span>   <span class="item">
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get13" src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get13" src="img/prize.jpg">
 </a>
 </span>
 </span>   <span class="item">
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get14" src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get14" src="img/prize.jpg">
 </a>
 </span>
 </span>   <span class="item">
    	<span class="carousel__cell">
 <a href="img/prize.jpg" class="item-wrap fancybox" data-fancybox="gallery2">
 <span class="fas fa-search"></span>
-<img class="img-fluid" id="get15" src="img/prize.jpg" style="height: 414px; width: 100%; opacity: 0.7;">
+<img class="img-fluid img-c" id="get15" src="img/prize.jpg">
 </a>
 </span>
 </span>
@@ -280,7 +289,7 @@
     <button class="previous-button" style="  background-color:  #2980B9; /* Green */
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 2vh 7vw;
   border-radius: 8px;
   text-align: center;
   text-decoration: none;
@@ -294,7 +303,7 @@
     <button class="next-button"  style="  background-color: #2980B9; /* Green */
   border: none;
   color: white;
-  padding: 16px 32px;
+  padding: 2vh 7vw;
   border-radius: 8px;
   text-align: center;
   text-decoration: none;
@@ -419,9 +428,6 @@
                         </a>
                     </li> 
                 </ul>  
-                
-  
-  
                <hr class="hr-red d-lg-none">
             </div>
             <div class="col-lg-4">
@@ -447,8 +453,6 @@
                 </form>
                 <hr class="hr-red d-lg-none">
             </div>
-            
-  
         </div>
     </div>
   </div>

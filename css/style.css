@@ -16,6 +16,7 @@ html {
   overflow-x: hidden; }
 
 body {
+  overflow: hidden;
   line-height: 1.7;
   color: gray;
   font-weight: 400;
