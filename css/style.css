@@ -572,7 +572,7 @@ body:after {
     .sticky-wrapper.is-sticky .site-navbar .site-logo a {
       color: #007bff; }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
-      color: #000 !important; }
+      color: #000; }
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
         color: #007bff !important; }
 
