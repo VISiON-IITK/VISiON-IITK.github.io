@@ -312,7 +312,7 @@
   </style>
   <script>
 
-    var i1 = 0;
+var i1 = 0;
     var i2 = 0;
     var i3 = 0;
     var i4 = 0;
@@ -324,58 +324,71 @@
     var txt4 = 'In';
     var txt5 = 'Outdoor';
     var txt6 = 'Navigation';
-    var speed = 400;
-
-    function V() {
-      if (i1 < txt1.length) {
-        document.getElementById("demo1").innerHTML += txt1.charAt(i1);
-        i1++;
-        setTimeout(V, speed);
-      }
-    }
-    function t() {
-      if (i2 < txt2.length) {
-        document.getElementById("demo2").innerHTML += txt2.charAt(i2);
-        i2++;
-        setTimeout(t, speed);
-      }
-    }
-    function e() {
-      if (i3 < txt3.length) {
-        document.getElementById("demo3").innerHTML += txt3.charAt(i3);
-        i3++;
-        setTimeout(e, speed);
-      }
-    }
-    function w() {
-      if (i4 < txt4.length) {
-        document.getElementById("demo4").innerHTML += txt4.charAt(i4);
-        i4++;
-        setTimeout(w, speed);
-      }
-    }
-    function a() {
-      if (i5 < txt5.length) {
-        document.getElementById("demo5").innerHTML += txt5.charAt(i5);
-        i5++;
-        setTimeout(a, speed);
-      }
-    }
+    var speed = 200;
     function r() {
       if (i6 < txt6.length) {
         document.getElementById("demo6").innerHTML += txt6.charAt(i6);
         i6++;
         setTimeout(r, speed);
       }
+    
+    }
+    function a() {
+     if (i5 < txt5.length) {
+        document.getElementById("demo5").innerHTML += txt5.charAt(i5);
+        i5++;
+        if(i5==7)
+        r();
+        setTimeout(a, speed);
+      }
+
+    }
+
+    function w() {
+      if (i4 < txt4.length) {
+        document.getElementById("demo4").innerHTML += txt4.charAt(i4);
+        i4++;
+        if(i4==2)
+        a();
+        setTimeout(w, speed);
+      }
+  
+    }
+
+    function e() {
+      if (i3 < txt3.length) {
+        document.getElementById("demo3").innerHTML += txt3.charAt(i3);
+        i3++;
+        if(i3==7)
+        w();
+        setTimeout(e, speed);
+      }
+    }
+    function t() {
+      if (i2 < txt2.length) {
+        document.getElementById("demo2").innerHTML += txt2.charAt(i2);
+        i2++;
+        if(i2==10)
+       e();
+        setTimeout(t, speed);
+      }
+  
+    }
+
+    function V() {
+
+      if (i1 < txt1.length) {
+        document.getElementById("demo1").innerHTML += txt1.charAt(i1);
+        i1++;
+        if(i1==6)
+       t();
+        setTimeout(V, speed);
+      }
+  
     }
 
     function myfunction() {
       V();
-      t();
-      e();
-      w();
-      a();
-      r();
 
       $.fn.jQuerySimpleCounter = function (options) {
         var settings = $.extend({
@@ -400,9 +413,9 @@
       };
 
       $('#number3').jQuerySimpleCounter({ end: 317, duration: 10000 });
-      $('#number1').jQuerySimpleCounter({ end: 6, duration: 10000 });
+      $('#number1').jQuerySimpleCounter({ end: 6, duration: 15000 });
       $('#number2').jQuerySimpleCounter({ end: 37, duration: 10000 });
-      $('#number4').jQuerySimpleCounter({ end: 2, duration: 10000 });
+      $('#number4').jQuerySimpleCounter({ end: 2, duration: 20000 });
 
     }
 
@@ -468,9 +481,9 @@
             alt="">
         </div>
         <div style="width: 60vw; height: 100vh; float: left;">
-          <div style="height: 100vh; display: table;">
+          <div style="padding-top: 20vh; height: 80vh; display: table;">
             <div style="display: table-cell;
-              vertical-align: middle; align-content: center;">
+              vertical-align: top; align-content: center;">
               <p id="demo1" class="visionFull"></p>
               <p id="demo2" class="visionFull"></p>
               <p id="demo3" class="visionFull"></p>
@@ -657,7 +670,6 @@
       </div>
     </div>
   </div>
-
   <!-- Contact Us -->
   <footer>
     <section class="" id="contact" data-magellan-target="contact">
