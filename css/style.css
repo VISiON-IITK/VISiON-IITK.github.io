@@ -140,7 +140,9 @@ body:after {
     border-top: 1px solid rgba(255, 255, 255, 0.1) !important; }
   .site-footer p {
     color: rgba(255, 255, 255, 0.7); }
-  .site-footer h2, .site-footer h3, .site-footer h4, .site-footer h5 {
+  .site-footer
+  
+  h2, .site-footer h3, .site-footer h4, .site-footer h5 {
     color: #fff; }
   .site-footer a {
     color: rgba(255, 255, 255, 0.7);
@@ -566,7 +568,7 @@ body:after {
     -webkit-box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1);
     box-shadow: 4px 0 20px -5px rgba(0, 0, 0, 0.1); }
     .sticky-wrapper.is-sticky .site-navbar .site-menu-toggle {
-      color: #000; }
+      color: #fff; }
     .sticky-wrapper.is-sticky .site-navbar .site-logo a {
       color: #007bff; }
     
