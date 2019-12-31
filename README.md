@@ -1,2 +1,2 @@
 # Official Website of Team VISION-IITK
-Link - [https://igvc-iitk.github.io/](https://igvc-iitk.github.io/)
+Link - [https://vision-iitk.github.io/](https://vision-iitk.github.io/)
