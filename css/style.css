@@ -7,6 +7,7 @@ input, textarea{
 .nav-cont{
   padding-right: 50px;
 }
+@media (min-width:1200px){.nav-cont{max-width:2000px; padding: 0px calc(5vw + 70px);}}
 .unselectable{
   -webkit-user-select: none;
   -khtml-user-select: none;
