@@ -37,9 +37,11 @@
   position: relative;
   color: #fff;
   overflow: hidden;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-color: black;
   background-position: center center;
+
 }
 .timeline .swiper-slide::after {
   content: "";
@@ -57,12 +59,12 @@
   position: absolute;
   text-align: center;
   width: 80%;
-  max-width: 310px;
+  /* max-width: 310px; */
   right: 50%;
   top: 13%;
   -webkit-transform: translate(50%, 0);
           transform: translate(50%, 0);
-  font-size: 12px;
+  font-size: 20px;
   z-index: 2;
 }
 .timeline .swiper-slide .timeline-year {
@@ -200,8 +202,8 @@
     top: 50%;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
-    width: 310px;
-    font-size: 11px;
+    width: 410px;
+    font-size: 21px;
     text-align: right;
   }
   .timeline .swiper-slide .timeline-year {
