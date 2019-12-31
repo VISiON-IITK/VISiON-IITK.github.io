@@ -4,7 +4,9 @@ input, textarea{
   border: none;
   padding: 2px;
 }
-
+.nav-cont{
+  padding-right: 50px;
+}
 .unselectable{
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -317,8 +319,8 @@ body:after {
         .site-navbar .site-navigation .site-menu > li > a:hover {
           color: #007bff; }
       .site-navbar .site-navigation .site-menu > li.social > a {
-        padding-left: 5px;
-        padding-right: 5px; }
+        padding-left: 10px;
+        padding-right: 10px; }
     .site-navbar .site-navigation .site-menu .has-children {
       position: relative; }
       .site-navbar .site-navigation .site-menu .has-children > a {
@@ -1600,9 +1602,11 @@ body:after {
   color: #007bff;
   letter-spacing: .2em;
   text-transform: uppercase; }
-
+ .section-title-part{
+  color: white;
+ }
 .section-title {
-  color: #007bff;
+  color: #f7941d;
   font-size: 40px;
   font-weight: 900; }
   @media (max-width: 991.98px) {
