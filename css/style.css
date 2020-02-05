@@ -306,14 +306,14 @@ body:after {
     .site-navbar .site-navigation .site-menu .active {
       color: #007bff;
       display: inline-block;
-      padding: 20px 20px; }
+      padding: 20px 10px; }
     .site-navbar .site-navigation .site-menu a {
       text-decoration: none !important;
       display: inline-block; }
     .site-navbar .site-navigation .site-menu > li {
       display: inline-block; }
       .site-navbar .site-navigation .site-menu > li > a {
-        padding: 20px 20px;
+        padding: 20px 10px;
         color: #000;
         display: inline-block;
         text-decoration: none !important; }
