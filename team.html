@@ -1,268 +1,295 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Team</title>
   <link rel="shortcut icon" href="./img/vision_small.png">
-	<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-<!-- <link rel="stylesheet" href="fonts/icomoon/style.css"> -->
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/jquery-ui.css">
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="css/jquery.fancybox.min.css">
-<link rel="stylesheet" href="css/bootstrap-datepicker.css">
-<link rel="stylesheet" href="css/aos.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/all.min.css">
-<link rel="stylesheet" href="css/contactus.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="fonts/icomoon/style.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/contactus.css">
 
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-  display: inline-block;
-  margin: 0px;
-   transition: 0.3s;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  border-radius: 5px;
-  z-index: -1;
-}
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-	 .logo-image{ 	
-   padding-top: 17px; 
-    height: 80px;
-    overflow: hidden;
-    opacity: 1;
-    margin-top: 0px;
-}
-.aos-animate{
-  text-align: center;
-}
- .team-member{
-   max-width: min-content;
-   display: inline-block;
- }
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-   transform-origin: center right;
-    cursor: pointer;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  z-index: -1;
-}
+    .flip-card {
+      background-color: transparent;
+      width: 300px;
+      height: 300px;
+      perspective: 1000px;
+      display: inline-block;
+      margin: 0px;
+      transition: 0.3s;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      z-index: -1;
+    }
 
-.flip-card:hover .flip-card-inner {
-    transform: translateX(-100%) rotateY(-180deg);
-  z-index: -1;
-}
+    .logo-image {
+      padding-top: 17px;
+      height: 80px;
+      overflow: hidden;
+      opacity: 1;
+      margin-top: 0px;
+    }
 
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  z-index: -1;
-}
+    .aos-animate {
+      text-align: center;
+    }
 
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-  z-index: -1
-}
+    .team-member {
+      max-width: min-content;
+      display: inline-block;
+    }
 
-.flip-card-back {
-  background-color: white;
-  color: white;
-  opacity: 1;
-  transform: rotateY(180deg);
-  z-index: -1;
-}
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-origin: center right;
+      cursor: pointer;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      z-index: -1;
+    }
 
-.contact-section {
-  
-  margin-top: 0;
-  padding-bottom: .65rem
-}
-.newcontact{
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  opacity:0.4;
-}
-::placeholder{
-  color: white;
-}
-.contact-information {
-  margin: 1rem auto 2rem;
-  width: 17rem !important
-}
-.contact-form-container {
-  margin: auto;
-  max-width: 35rem
-}
-.contact_text{
-    background-color: transparent;
-    border: 2px solid #f0f0f0;
-    width: 100% !important;
-    height: 2.4375rem;
-}
-</style>
+    .flip-card:hover .flip-card-inner {
+      transform: translateX(-100%) rotateY(-180deg);
+      z-index: -1;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden;
+      z-index: -1;
+    }
+
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+      z-index: -1
+    }
+
+    .flip-card-back {
+      background-color: white;
+      color: white;
+      opacity: 1;
+      transform: rotateY(180deg);
+      z-index: -1;
+    }
+
+    .contact-section {
+
+      margin-top: 0;
+      padding-bottom: .65rem
+    }
+
+    .newcontact {
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      opacity: 0.4;
+    }
+
+    ::placeholder {
+      color: white;
+    }
+
+    .contact-information {
+      margin: 1rem auto 2rem;
+      width: 17rem !important
+    }
+
+    .contact-form-container {
+      margin: auto;
+      max-width: 35rem
+    }
+
+    .contact_text {
+      background-color: transparent;
+      border: 2px solid #f0f0f0;
+      width: 100% !important;
+      height: 2.4375rem;
+    }
+  </style>
 </head>
+
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-<div id="overlayer">
+  <div id="overlayer">
     <div class="loader">
-        Loading...
+      Loading...
     </div>
-</div>
-<div class="site-wrap">
+  </div>
+  <div class="site-wrap">
     <div class="site-mobile-menu site-navbar-target">
-    <div class="site-mobile-menu-header">
-    <div class="site-mobile-menu-close mt-3">
-    <span class="icon-close2 js-menu-toggle"></span>
-    </div>
-    </div>
-    <div class="site-mobile-menu-body"></div>
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
     </div>
     <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
-    <div class="container  nav-cont">
-    <div class="row align-items-center">
-    <div class="col-6 col-xl-2">
-    <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0"><img src="img/visionfinal.png" class="logo-image"></a></h1>
-    </div>
-    <div class="col-12 col-md-10 d-none d-xl-block">
-      <nav class="site-navigation position-relative text-right" role="navigation">
-        <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-        <li><a href="index.html" class="nav-link">Home</a></li>
-        <li><a href="aboutus.html" class="nav-link">About Us</a></li>
-        <!-- <li><a href="blog.html" class="nav-link">Blog</a></li> -->
-        <li><a href="recruitment.html" class="nav-link">Recruitment</a></li>
-        <li><a href="time.html" class="nav-link">Legacy</a></li>
-        <li><a href="team.html" class="nav-link active" style="color: #007bff;">Team</a></li>
-        <li><a href="gallery.html" class="nav-link" style="padding-right: 40px;">Gallery</a></li>
-        <li class="social"><a href="https://www.facebook.com/vision.iitk/" class="nav-link" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-        <li class="social"><a href="https://www.youtube.com/c/IGVCIITK" class="nav-link" target="_blank"><i class="fab fa-youtube"></i></a></li>
-        <li class="social"><a href="https://www.linkedin.com/company/igvc-iitk/" class="nav-link" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-        <li class="social"><a href="https://github.com/VISiON-IITK" class="nav-link" target="_blank"><i class="fab fa-github"></i></a></li>
-        </ul>
-        </nav>
-    </div>
-    <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="fas fa-bars"></span></a></div>
-    </div>
-    </div>
+      <div class="container  nav-cont">
+        <div class="row align-items-center">
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0"><img src="img/visionfinal.png"
+                  class="logo-image"></a></h1>
+          </div>
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="aboutus.html" class="nav-link">About Us</a></li>
+                <!-- <li><a href="blog.html" class="nav-link">Blog</a></li> -->
+                <li><a href="recruitment.html" class="nav-link">Recruitment</a></li>
+                <li><a href="time.html" class="nav-link">Legacy</a></li>
+                <li><a href="team.html" class="nav-link active" style="color: #007bff;">Team</a></li>
+                <li><a href="gallery.html" class="nav-link" style="padding-right: 40px;">Gallery</a></li>
+                <li class="social"><a href="https://www.facebook.com/vision.iitk/" class="nav-link" target="_blank"><i
+                      class="fab fa-facebook-f"></i></a></li>
+                <li class="social"><a href="https://www.youtube.com/c/IGVCIITK" class="nav-link" target="_blank"><i
+                      class="fab fa-youtube"></i></a></li>
+                <li class="social"><a href="https://www.linkedin.com/company/igvc-iitk/" class="nav-link"
+                    target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                <li class="social"><a href="https://github.com/VISiON-IITK" class="nav-link" target="_blank"><i
+                      class="fab fa-github"></i></a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#"
+              class="site-menu-toggle js-menu-toggle float-right"><span class="fas fa-bars"></span></a></div>
+        </div>
+      </div>
     </header>
-    <div class="site-blocks-cover overlay bg-image" style="background-image: url(img/banner.jpg); background-attachment: fixed;background-position-y: top; padding-top: 80px;" data-aos="fade" id="home-section">
+    <div class="site-blocks-cover overlay bg-image"
+      style="background-image: url(img/banner.jpg); background-attachment: fixed;background-position-y: top; padding-top: 80px;"
+      data-aos="fade" id="home-section">
+      <div class="container">
+        <div class="row align-items-center justify-content-center"
+          style="height: calc(100vh - 80px); align-items: flex-end !important">
+          <div class="col-md-10 mt-lg-5 text-center">
+            <h1 style="color: #f7941d; opacity: 1;">
+              <font style="font-size : calc(4vw + 50px);">Team</font>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <section class="site-section" id="team-section">
     <div class="container">
-      <div class="row align-items-center justify-content-center" style="height: calc(100vh - 80px); align-items: flex-end !important">
-    <div class="col-md-10 mt-lg-5 text-center">
-    <h1 style = "color: #f7941d; opacity: 1;"><font style="font-size : calc(4vw + 50px);">Team</font></h1>
-    </div>
-    </div>
-    </div>
-    </div>
-    
-    </div>
-<section class="site-section" id="team-section">
-<div class="container">
-    <h1 style="color: white; text-align: center;">Faculty Advisor</h1>
-<center>
-	<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="">
-<div class="team-member">
+      <h1 style="color: white; text-align: center;">Faculty Advisor</h1>
+      <center>
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="">
+          <div class="team-member">
 
-<ul class="social">
-<li><a href="https://www.facebook.com/mangaljain"><i class="fab fa-facebook-f"></i></li>
-<li><a href="https://www.linkedin.com/in/mangal-kothari-93459a7/"><i class="fab fa-linkedin-in"></i></a></li>
-<li><a href="#"><i class="fab fa-github"></i></a></li>
-</ul>
-<div class="flip-card" >
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="img/kotharisir.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-    </div>
-    <div class="flip-card-back">
-      <img src="img/kotharisir.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-    </div>
-  </div>
-</div>
-<div class="p-3">
-<h3 style="color: greenyellow;">Dr. Mangal Kothari</h3>
-<span class="position" style="color: white">Faculty Advisor</span>
-</div>
-</div>
-</div>
-</center>
-<h1 style="color: white; text-align: center; padding-bottom: 25px;">Team Leaders</h1>
-<div class="row">
-  <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-    <div class="team-member">
+            <ul class="social">
+              <li><a href="https://www.facebook.com/mangaljain"><i class="fab fa-facebook-f"></i></li>
+              <li><a href="https://www.linkedin.com/in/mangal-kothari-93459a7/"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/kotharisir.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/kotharisir.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Dr. Mangal Kothari</h3>
+              <span class="position" style="color: white">Faculty Advisor</span>
+            </div>
+          </div>
+        </div>
+      </center>
+      <h1 style="color: white; text-align: center; padding-bottom: 25px;">Team Leaders</h1>
+      <div class="row">
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
 
-  <ul class="social">
-  <li><a href="https://www.facebook.com/saaransh.aggarwal.96"><i class="fab fa-facebook-f"></i></a></li>
-  <li><a href="https://www.linkedin.com/in/saaransh-aggarwal-7728811ab/"><i class="fab fa-linkedin-in"></i></a></li>
-  <li><a href="https://github.com/SAAR2000"><i class="fab fa-github"></i></a></li>
-  </ul>
-  <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-  <div class="flip-card-inner">
-  <div class="flip-card-front">
-  <img src="img/saaransh.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-  </div>
-  <div class="flip-card-back">
-  <img src="img/saaransh.jpg" alt="Avatar" style="object-fit: cover;width:300px;height:300px;">
-  </div>
-  </div>
-  </div>
-  <div class="p-3">
-  <h3 style="color: greenyellow;">Saaransh Aggarwal</h3>
-  <span class="position" style="color: white">Team Leader,Y19</span>
-  </div>
-</div>
-</div>
+            <ul class="social">
+              <li><a href="https://www.facebook.com/saaransh.aggarwal.96"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/saaransh-aggarwal-7728811ab/"><i
+                    class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/SAAR2000"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/saaransh.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/saaransh.jpg" alt="Avatar" style="object-fit: cover;width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Saaransh Aggarwal</h3>
+              <span class="position" style="color: white">Team Leader,Y19</span>
+            </div>
+          </div>
+        </div>
 
-<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-  <div class="team-member">
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
 
-<ul class="social">
-  <li><a href="https://www.facebook.com/sanskar.mittal.100/"><i class="fab fa-facebook-f"></i></a></li>
-  <li><a href="http://www.linkedin.com/in/sanskar-mittal-360b2319b"><i class="fab fa-linkedin-in"></i></a></li>
-  <li><a href="https://github.com/sanskarm"><i class="fab fa-github"></i></a></li>
-  </ul>
-  <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <img src="img/sanskar_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-      </div>
-      <div class="flip-card-back">
-        <img src="img/sanskar_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-      </div>
-    </div>
-  </div>
-  <div class="p-3">
-  <h3 style="color: greenyellow;">Sanskar Mittal</h3>
-  <span class="position" style="color: white">Team Leader,Y19</span>
-  </div>
-  </div>
-  </div> 
+            <ul class="social">
+              <li><a href="https://www.facebook.com/sanskar.mittal.100/"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="http://www.linkedin.com/in/sanskar-mittal-360b2319b"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li><a href="https://github.com/sanskarm"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/sanskar_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/sanskar_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Sanskar Mittal</h3>
+              <span class="position" style="color: white">Team Leader,Y19</span>
+            </div>
+          </div>
+        </div>
 
 
-  <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-    <div class="team-member">
-    
-        <ul class="social">
-            <li><a href="https://www.facebook.com/shorya.kumar.10"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/shorya-kumar-21794018b/"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/shoryak"><i class="fab fa-github"></i></a></li>
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
+
+            <ul class="social">
+              <li><a href="https://www.facebook.com/shorya.kumar.10"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/shorya-kumar-21794018b/"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li><a href="https://github.com/shoryak"><i class="fab fa-github"></i></a></li>
             </ul>
             <div class="flip-card" style="padding-left:15px; padding-right:15px;">
               <div class="flip-card-inner">
@@ -275,248 +302,319 @@ body {
               </div>
             </div>
             <div class="p-3">
-            <h3 style="color: greenyellow;">Shorya Kumar</h3>
-            <span class="position" style="color: white">Team Leader,Y19</span>
-            </div>
-            </div>
-            </div>
-        
-</div>
-<h1 style=" color: white;text-align: center; margin: 50px;">Team Members</h1>
-
-<div class="row">
-
-  <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-    <div class="team-member">
-    <ul class="social">
-    <li><a href="https://www.facebook.com/profile.php?id=100040541026410"><i class="fab fa-facebook-f"></i></a></li>
-    <li><a href="https://www.linkedin.com/in/aditya-patil-859964202"><i class="fab fa-linkedin-in"></i></a></li>
-    <li><a href="https://github.com/adip1343"><i class="fab fa-github"></i></a></li>
-    </ul>
-    <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-      <div class="flip-card-inner">
-        <div class="flip-card-front">
-          <img src="img/aditya_p1.JPG" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-        </div>
-        <div class="flip-card-back">
-          <img src="img/aditya_p2.JPG" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-        </div>
-      </div>
-    </div>
-    <div class="p-3">
-    <h3 style="color: greenyellow;">Aditya Patil</h3>
-    <span class="position" style="color: white">Team Member,Y19</span>
-    </div>
-    </div>
-    </div>
-    <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-      <div class="team-member">
-      <ul class="social">
-      <li><a href="https://www.facebook.com/Zark84010/"><i class="fab fa-facebook-f"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/aditya-r-77402a119/"><i class="fab fa-linkedin-in"></i></a></li>
-      <li><a href="http://github.com/Zark84010"><i class="fab fa-github"></i></a></li>
-      </ul>
-      <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="img/Aditya_Ranjan.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-          </div>
-          <div class="flip-card-back">
-            <img src="img/Aditya_Ranjan.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-          </div>
-        </div>
-      </div>
-      <div class="p-3">
-      <h3 style="color: greenyellow;">Aditya Ranjan</h3>
-      <span class="position" style="color: white">Team Member,Y19</span>
-      </div>
-      </div>
-      </div>
-<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-<div class="team-member">
-
-    <ul class="social">
-        <li><a href="https://www.facebook.com/ambuja.budakoti.1"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/ambuja-budakoti-69073919b"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="https://github.com/AmbujaBudakoti27"><i class="fab fa-github"></i></a></li>
-        </ul>
-        <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/Ambuja1.jpg" alt="Avatar" style="object-fit: cover ;width:300px;height:300px;">
-            </div>
-            <div class="flip-card-back">
-              <img src="img/Ambuja2.jpeg" alt="Avatar" style="object-fit: cover;width:300px;height:300px;">
+              <h3 style="color: greenyellow;">Shorya Kumar</h3>
+              <span class="position" style="color: white">Team Leader,Y19</span>
             </div>
           </div>
         </div>
-        
-        <div class="p-3">
-        <h3 style="color: greenyellow;">Ambuja Budakoti</h3>
-        <span class="position" style="color: white">Team Member,Y19</span>
-        </div>
-        </div>
-        </div>
- 
-       
-        
-                  </div>
 
-                  <div class="row">
-                    <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                      <div class="team-member">
-                      <ul class="social">
-                          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                          <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                          <li><a href="#"><i class="fab fa-github"></i></a></li>
-                          </ul>
-                          <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-                            <div class="flip-card-inner">
-                              <div class="flip-card-front">
-                                <img src="img/unknown.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-                              </div>
-                              <div class="flip-card-back">
-                                <img src="img/unknown.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-                              </div>
-                            </div>
-                          </div>
-                          
-                          <div class="p-3">
-                          <h3 style="color: greenyellow;">Aryan Pandeya</h3>
-                          <span class="position" style="color: white">Team Member,Y19</span>
-                          </div>
-                          </div>
-                          </div>
-             
-                    <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-                      <div class="team-member">    
-                  <ul class="social">
-                      <li><a href="https://www.facebook.com/aryash.pateriya.5"><i class="fab fa-facebook-f"></i></li>
-                      <li><a href="https://www.linkedin.com/in/aryash-pateriya-00b9651a3"><i class="fab fa-linkedin-in"></i></a></li>
-                      <li><a href="https://github.com/aryashp"><i class="fab fa-github"></i></a></li>
-                      </ul>
-                      <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-                        <div class="flip-card-inner">
-                          <div class="flip-card-front">
-                            <img src="img/aryash_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-                          </div>
-                          <div class="flip-card-back">
-                            <img src="img/aryash_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-                          </div>
-                        </div>
-                      </div>
-                      <div class="p-3">
-                      <h3 style="color: greenyellow;">Aryash Pateria</h3>
-                      <span class="position" style="color: white">Team Member,Y19</span>
-                      </div>
-                      </div>
-                      </div>
+      </div>
+      <h1 style=" color: white;text-align: center; margin: 50px;">Team Members</h1>
 
+      <div class="row">
 
-                      <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-                          <div class="team-member">
-
-                                  
-                                  <ul class="social">
-                                  <li><a href="https://www.facebook.com/profile.php?id=100012452057946"><i class="fab fa-facebook-f"></i></a></li>
-                                  <li><a href="https://www.linkedin.com/in/roushan-prakash-6063881a4/"><i class="fab fa-linkedin-in"></i></a></li>
-                                  <li><a href="https://github.com/roushanp"><i class="fab fa-github"></i></a></li>
-                                  </ul>
-                                  <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-                                    <div class="flip-card-inner">
-                                      <div class="flip-card-front">
-                                        <img src="img/roushan_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-                                      </div>
-                                      <div class="flip-card-back">
-                                        <img src="img/roushan_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="p-3">
-                                  <h3 style="color: greenyellow;">Roushan Prakash</h3>
-                                  <span class="position" style="color: white">Team Member,Y19</span>
-                                  </div>
-                                  </div>
-                                  </div>
-                          
-                  </div>
-<div class="row">
-
-          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-              <div class="team-member">
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
 
             <ul class="social">
-            <li><a href="https://www.facebook.com/saaransh.aggarwal.96"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/saaransh-aggarwal-7728811ab/"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/SAAR2000"><i class="fab fa-github"></i></a></li>
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i
+                    class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
             </ul>
             <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-            <div class="flip-card-inner">
-            <div class="flip-card-front">
-            <img src="img/saaransh.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-            </div>
-            <div class="flip-card-back">
-            <img src="img/saaransh.jpg" alt="Avatar" style="object-fit: cover;width:300px;height:300px;">
-            </div>
-            </div>
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/unknown.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/unknown.jpg" alt="Avatar" style="object-fit: cover;width:300px;height:300px;">
+                </div>
+              </div>
             </div>
             <div class="p-3">
-            <h3 style="color: greenyellow;">Saaransh Aggarwal</h3>
-            <span class="position" style="color: white">Team Member,Y19</span>
+              <h3 style="color: greenyellow;">Aditya Tanwar</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-member">
+            <ul class="social">
+              <li><a href="https://www.facebook.com/people/Apurb-Agarwal/100013622683452/"><i
+                    class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/apurb-agarwal-852b90200/"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li><a href="https://github.com/agarwalapurb"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/Apurb_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/Apurb_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Apurb Agarwal</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
             </div>
           </div>
         </div>
 
-    <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="team-member">
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
 
-    <ul class="social">
-        <li><a href="https://www.facebook.com/sanskar.mittal.100/"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="http://www.linkedin.com/in/sanskar-mittal-360b2319b"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="https://github.com/sanskarm"><i class="fab fa-github"></i></a></li>
-        </ul>
-        <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/sanskar_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+            <ul class="social">
+              <li><a href="https://www.facebook.com/profile.php?id=100006581264943"><i
+                    class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/devansh-kumar-jha-22969a179/"><i
+                    class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/dkjha20"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/DevanshKumarJha1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/DevanshKumarJha2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+              </div>
             </div>
-            <div class="flip-card-back">
-              <img src="img/sanskar_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Devansh Kumar Jha</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
             </div>
           </div>
         </div>
-        <div class="p-3">
-        <h3 style="color: greenyellow;">Sanskar Mittal</h3>
-        <span class="position" style="color: white">Team Member,Y19</span>
-        </div>
-        </div>
-        </div> 
+        
+      </div>
 
-<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="">
-<div class="team-member">
+      <div class="row">
+        
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
 
-    <ul class="social">
-        <li><a href="https://m.facebook.com/sarvesh.chandra.9619"><i class="fab fa-facebook-f"></i></li>
-        <li><a href="https://in.linkedin.com/in/sarvesh-chandra-0aa9a11a7"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="https://github.com/poseidon078"><i class="fab fa-github"></i></a></li>
-        </ul>
-        <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/Sarvesh-1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+            <ul class="social">
+              <li><a href="https://www.facebook.com/gitika.mittal.58"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/gitika-m-22659a132"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/unknown_girl.jpg" alt="Avatar" style="object-fit: cover ;width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/unknown_girl.jpg" alt="Avatar" style="object-fit: cover;width:300px;height:300px;">
+                </div>
+              </div>
             </div>
-            <div class="flip-card-back">
-              <img src="img/sarvesh_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Gitika Mittal</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
             </div>
           </div>
         </div>
-        <div class="p-3">
-        <h3 style="color: greenyellow;">Sarvesh Chandra</h3>
-        <span class="position" style="color: white">Team Member,Y19</span>
+        
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
+            <ul class="social">
+              <li><a href="https://www.facebook.com/harshit.bansal.39904/"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/harshit-bansal-337624208/"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/harshit-bansal18"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/unknown.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/unknown.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Harshit Bansal</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
+            </div>
+          </div>
         </div>
+
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
+            <ul class="social">
+              <li><a href="https://www.facebook.com/profile.php?id=100009247311228"><i class="fab fa-facebook-f"></i></li>
+              <li><a href="https://www.linkedin.com/in/ishan-bawne-46a5a8225/"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li><a href="https://github.com/ishanbawne20"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/Ishan_3.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/Ishan_4.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Ishan Bawne</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
+            </div>
+          </div>
         </div>
+      
+      </div>
+
+      <div class="row">
+        
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-member">
+
+
+            <ul class="social">
+              <li><a href="#"><i
+                    class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i
+                    class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/unknown.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/unknown.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Onkar ShriKrishna Das</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
+            </div>
+          </div>
         </div>
-<!-- 
+        
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-member">
+
+
+            <ul class="social">
+              <li><a href="https://www.facebook.com/parth.agrawal.02"><i
+                    class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/parthagrawal02"><i
+                    class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/parthagrawal02"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/Parth.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/Parth.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Parth Agarwal</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
+
+            <ul class="social">
+              <li><a href="https://www.facebook.com/franticalien/"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/piyushbeegala/"><i
+                    class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/franticalien"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/Piyush.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/Piyush.jpg" alt="Avatar" style="object-fit: cover;width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Piyush Beegala</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
+
+            <ul class="social">
+              <li><a href="https://www.facebook.com/pradhyumna.lavania/"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/pradhyumna-lavania-5777b61ba/"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li><a href="https://github.com/Pradhyumna-Lavania"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/Pradhyumna.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/Pradhyumna.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Pradhyumna Lavania</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="">
+          <div class="team-member">
+
+            <ul class="social">
+              <li><a href="https://www.facebook.com/Siddhant7876/"><i class="fab fa-facebook-f"></i></li>
+              <li><a href="https://www.linkedin.com/in/siddhant-singh-2002/"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li><a href="https://github.com/siddhant7876"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/Siddhant.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/Siddhant.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Siddhant Shivdutt Singh</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
+            </div>
+          </div>
+        </div>
+        <!-- 
 
         <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="">
             <div class="team-member">
@@ -542,226 +640,230 @@ body {
                     </div>
                     </div>
                     </div>  -->
-</div>
 
-<div class="row">
+        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
 
-  <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-    <div class="team-member">
-    
-        <ul class="social">
-            <li><a href="https://www.facebook.com/shorya.kumar.10"><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href="https://www.linkedin.com/in/shorya-kumar-21794018b/"><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href="https://github.com/shoryak"><i class="fab fa-github"></i></a></li>
+            <ul class="social">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li><a href="#"><i class="fab fa-github"></i></a></li>
             </ul>
             <div class="flip-card" style="padding-left:15px; padding-right:15px;">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
-                  <img src="img/shorya_1.jpeg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                  <img src="img/unknown.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
                 </div>
                 <div class="flip-card-back">
-                  <img src="img/shorya_2.jpeg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                  <img src="img/unknown.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
                 </div>
               </div>
             </div>
             <div class="p-3">
-            <h3 style="color: greenyellow;">Shorya Kumar</h3>
-            <span class="position" style="color: white">Team Member,Y19</span>
-            </div>
-            </div>
-            </div>
-            
-<div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
-<div class="team-member">
-
-    <ul class="social">
-        <li><a href="https://www.facebook.com/profile.php?id=100025304598195"><i class="fab fa-facebook-f"></i></a></li>
-        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-        <li><a href="https://github.com/utkjainiitk"><i class="fab fa-github"></i></a></li>
-        </ul>
-        <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="img/utkarsh_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-            </div>
-            <div class="flip-card-back">
-              <img src="img/utkarsh_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+              <h3 style="color: greenyellow;">Somansh Prakash Dubey</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
             </div>
           </div>
         </div>
-        <div class="p-3">
-        <h3 style="color: greenyellow;">Utkarsh Jain</h3>
-        <span class="position" style="color: white">Team Member,Y19</span>
-        </div>
-        </div>
-        </div>
 
-        <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="team-member">
-            
-                <ul class="social">
-                    <li><a href="https://www.facebook.com/profile.php?id=100006581264943"><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="https://www.linkedin.com/in/devansh-kumar-jha-22969a179/"><i class="fab fa-linkedin-in"></i></a></li>
-                    <li><a href="https://github.com/dkjha20"><i class="fab fa-github"></i></a></li>
-                    </ul>
-                    <div class="flip-card" style="padding-left:15px; padding-right:15px;">
-                      <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                          <img src="img/DevanshKumarJha1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                          <img src="img/DevanshKumarJha2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="p-3">
-                    <h3 style="color: greenyellow;">Devansh Kumar Jha</h3>
-                    <span class="position" style="color: white">Team Member,Y20</span>
-                    </div>
-                    </div>
-                    </div>
+        <!-- <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-member">
 
-                      </div>
-</div>
-</section>
-<!-- Contact Us -->
-<footer>
-  <section class="" id="contact" data-magellan-target="contact">
-    <div class="grid-y grid-padding-y"
-      style="background: url(img/mapfinal.JPG);background-position: center;background-size: cover;">
-      <div class="cell large-1">
-        <center>
-          <h1 class="white">
-            <span style="color:#f7941d">Contact</span> Us</h1>
-        </center>
-      </div>
-      <div class="cell large-11">
-        <div class="grid-x">
-          <div class="cell large-4">
-            <div class="grid-x grid-padding-x grid-padding-y">
-              <div class="cell large-12 medium-6 contact-information">
-                <i class="fa fa-envelope fa-lg" style="color:#f7941d"></i>
-                <h6 class="white">vision.iitk@gmail.com</h6>
-                <h6 class="white">shoryak@iitk.ac.in</h6>
-                <h6 class="white">sanskarm@iitk.ac.in</h6>
-                <h6 class="white">saaragg@iitk.ac.in</h6>
-              </div>
-              <div class="cell large-12 medium-6 contact-information">
-                <i class="fa fa-phone fa-lg" style="color:#f7941d"></i>
-                <h6 class="white">Shorya Kumar:
-                  <small>8279825059</small>
-                </h6>
-                <h6 class="white">Sanskar Mittal:
-                  <small>9826360038</small>
-                </h6>
-                <h6 class="white">Saaransh Aggarwal:
-                  <small>7347597309</small>
-                </h6>
-              </div>
-            </div>
-          </div>
-          <div class="cell large-3"></div>
-          <div class="cell large-4">
-            <br>
-            <form action="https://formspree.io/pr.igvciitk@gmail.com" class="contact-form container my_form"
-              method="POST">
-              <div class="row">
-                <div class="col-12 col-lg-6">
-                  <textarea class=" form-input w-100 m-1 ml-0" id="first_name" rows="1"
-                    style="color:white;background: transparent;border: #f7941d 2px solid; padding: 7px; font-size: large;" name="First_name"
-                    placeholder=" First Name" type="text"></textarea>
+            <ul class="social">
+              <li><a href="https://www.facebook.com/profile.php?id=100025304598195"><i
+                    class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/utkjainiitk"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/utkarsh_1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
                 </div>
-                <div class=" col-12 col-lg-6">
-                  <textarea class="form-input w-100 m-1 ml-0" id="last_name" rows="1"
-                    style="color:white;background: transparent;border: #f7941d 2px solid; padding: 7px" name="Last_name"
-                    placeholder=" Last Name" type="text"></textarea>
+                <div class="flip-card-back">
+                  <img src="img/utkarsh_2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
                 </div>
               </div>
-              <textarea class=" form-input w-100 m-1 ml-0" rows="1"
-                style="color:white;background: transparent;border: #f7941d 2px solid; padding: 7px" id="email" name="email-id"
-                placeholder=" Email" type="email"></textarea>
-
-              <textarea class=" form-input w-100 m-1 ml-0" rows="6"
-                style="color:white;background: transparent;border: #f7941d 2px solid; padding-left: 7px; padding-right: 5px;" id="message" name="message"
-                placeholder=" Message" type="text"></textarea>
-              <input class=" form-input m-1 ml-0 text-center" 
-                style="color:white;background:transparent;border: #f7941d 2px solid;width: 70px" type="submit"
-                value="Send">
-            </form>
-            <hr class="hr-red d-lg-none">
+            </div>
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Utkarsh Jain</h3>
+              <span class="position" style="color: white">Team Member,Y19</span>
+            </div>
           </div>
-          <div class="cell large-3">
+        </div> -->
+
+        <!-- <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-member">
+
+            <ul class="social">
+              <li><a href="https://www.facebook.com/profile.php?id=100006581264943"><i
+                    class="fab fa-facebook-f"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/devansh-kumar-jha-22969a179/"><i
+                    class="fab fa-linkedin-in"></i></a></li>
+              <li><a href="https://github.com/dkjha20"><i class="fab fa-github"></i></a></li>
+            </ul>
+            <div class="flip-card" style="padding-left:15px; padding-right:15px;">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="img/DevanshKumarJha1.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+                <div class="flip-card-back">
+                  <img src="img/DevanshKumarJha2.jpg" alt="Avatar" style="object-fit: cover; width:300px;height:300px;">
+                </div>
+              </div>
+            </div>
+            <div class="p-3">
+              <h3 style="color: greenyellow;">Devansh Kumar Jha</h3>
+              <span class="position" style="color: white">Team Member,Y20</span>
+            </div>
           </div>
-        </div>
-      </div>
-      <div style="display: flex; justify-content: flex-start ; padding-left: 10%; font-size: 0.5rem">
+        </div> -->
 
-        <ul class="list-unstyled list-inline text-white">
-
-          <li class="list-inline-item">
-            <a class="font-white" target="_blank" href="https://www.facebook.com/vision.iitk" style="color: white; ">
-              <i class="fab fa-facebook fa-3x"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="font-white" target="_blank" href="https://www.linkedin.com/company/igvc-iitk/about/"
-              style="color: white;">
-              <i class="fab fa-linkedin-in fa-3x"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="font-white" target="_blank" href="https://github.com/VISiON-IITK"
-              style="color: white;">
-              <i class="fab fa-github fa-3x"></i>
-            </a>
-          </li>
-          <li class="list-inline-item">
-            <a class="font-white" target="_blank" href="https://youtube.com/c/igvciitk"
-              style="color: white;">
-              <i class="fab fa-youtube fa-3x"></i>
-            </a>
-          </li>
-        </ul>
       </div>
     </div>
-
-
   </section>
-</footer>
-    <!--  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<!-- <script src="js/jquery-3.3.1.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script> -->
-<script src="js/jquery-ui.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
-<script src="js/popper.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
-<script src="js/bootstrap.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
-<script src="js/owl.carousel.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
-<script src="js/jquery.countdown.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
-<script src="js/jquery.easing.1.3.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
-<script src="js/aos.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
-<script src="js/jquery.fancybox.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
-<script src="js/jquery.sticky.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
-<!-- <script src="js/isotope.pkgd.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script> -->
-<script src="js/main.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
-<script type="6a9fa9fbb3e34339c849d587-text/javascript">
+  <!-- Contact Us -->
+  <footer>
+    <section class="" id="contact" data-magellan-target="contact">
+      <div class="grid-y grid-padding-y"
+        style="background: url(img/mapfinal.JPG);background-position: center;background-size: cover;">
+        <div class="cell large-1">
+          <center>
+            <h1 class="white">
+              <span style="color:#f7941d">Contact</span> Us
+            </h1>
+          </center>
+        </div>
+        <div class="cell large-11">
+          <div class="grid-x">
+            <div class="cell large-4">
+              <div class="grid-x grid-padding-x grid-padding-y">
+                <div class="cell large-12 medium-6 contact-information">
+                  <i class="fa fa-envelope fa-lg" style="color:#f7941d"></i>
+                  <h6 class="white">vision.iitk@gmail.com</h6>
+                  <h6 class="white">shoryak@iitk.ac.in</h6>
+                  <h6 class="white">sanskarm@iitk.ac.in</h6>
+                  <h6 class="white">saaragg@iitk.ac.in</h6>
+                </div>
+                <div class="cell large-12 medium-6 contact-information">
+                  <i class="fa fa-phone fa-lg" style="color:#f7941d"></i>
+                  <h6 class="white">Shorya Kumar:
+                    <small>8279825059</small>
+                  </h6>
+                  <h6 class="white">Sanskar Mittal:
+                    <small>9826360038</small>
+                  </h6>
+                  <h6 class="white">Saaransh Aggarwal:
+                    <small>7347597309</small>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <div class="cell large-3"></div>
+            <div class="cell large-4">
+              <br>
+              <form action="https://formspree.io/pr.igvciitk@gmail.com" class="contact-form container my_form"
+                method="POST">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <textarea class=" form-input w-100 m-1 ml-0" id="first_name" rows="1"
+                      style="color:white;background: transparent;border: #f7941d 2px solid; padding: 7px; font-size: large;"
+                      name="First_name" placeholder=" First Name" type="text"></textarea>
+                  </div>
+                  <div class=" col-12 col-lg-6">
+                    <textarea class="form-input w-100 m-1 ml-0" id="last_name" rows="1"
+                      style="color:white;background: transparent;border: #f7941d 2px solid; padding: 7px"
+                      name="Last_name" placeholder=" Last Name" type="text"></textarea>
+                  </div>
+                </div>
+                <textarea class=" form-input w-100 m-1 ml-0" rows="1"
+                  style="color:white;background: transparent;border: #f7941d 2px solid; padding: 7px" id="email"
+                  name="email-id" placeholder=" Email" type="email"></textarea>
+
+                <textarea class=" form-input w-100 m-1 ml-0" rows="6"
+                  style="color:white;background: transparent;border: #f7941d 2px solid; padding-left: 7px; padding-right: 5px;"
+                  id="message" name="message" placeholder=" Message" type="text"></textarea>
+                <input class=" form-input m-1 ml-0 text-center"
+                  style="color:white;background:transparent;border: #f7941d 2px solid;width: 70px" type="submit"
+                  value="Send">
+              </form>
+              <hr class="hr-red d-lg-none">
+            </div>
+            <div class="cell large-3">
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: flex-start ; padding-left: 10%; font-size: 0.5rem">
+
+          <ul class="list-unstyled list-inline text-white">
+
+            <li class="list-inline-item">
+              <a class="font-white" target="_blank" href="https://www.facebook.com/vision.iitk" style="color: white; ">
+                <i class="fab fa-facebook fa-3x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="font-white" target="_blank" href="https://www.linkedin.com/company/igvc-iitk/about/"
+                style="color: white;">
+                <i class="fab fa-linkedin-in fa-3x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="font-white" target="_blank" href="https://github.com/VISiON-IITK" style="color: white;">
+                <i class="fab fa-github fa-3x"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="font-white" target="_blank" href="https://youtube.com/c/igvciitk" style="color: white;">
+                <i class="fab fa-youtube fa-3x"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+    </section>
+  </footer>
+  <!--  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <!-- <script src="js/jquery-3.3.1.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script> -->
+  <script src="js/jquery-ui.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+  <script src="js/popper.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+  <script src="js/bootstrap.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+  <script src="js/owl.carousel.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+  <script src="js/jquery.countdown.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+  <script src="js/jquery.easing.1.3.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+  <script src="js/aos.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+  <script src="js/jquery.fancybox.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+  <script src="js/jquery.sticky.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+  <!-- <script src="js/isotope.pkgd.min.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script> -->
+  <script src="js/main.js" type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+    type="6a9fa9fbb3e34339c849d587-text/javascript"></script>
+  <script type="6a9fa9fbb3e34339c849d587-text/javascript">
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-23581568-13');
 </script>
-<script type="text/javascript">
-  // made by chappu Panda
-      $(document).ready(function(){
-        $(window).scroll(function() { // check if scroll event happened
-          if ($(document).scrollTop() > 1) { // check if user scrolled more than 50 from top of the browser window
-            $(".logo-image").attr("src", "img/visionfinal_white.png"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
-          } else {
-            $(".logo-image").attr("src", "img/visionfinal.png"); // if not, change it back to transparent
-          }
-        });
+  <script type="text/javascript">
+    // made by chappu Panda
+    $(document).ready(function () {
+      $(window).scroll(function () { // check if scroll event happened
+        if ($(document).scrollTop() > 1) { // check if user scrolled more than 50 from top of the browser window
+          $(".logo-image").attr("src", "img/visionfinal_white.png"); // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+        } else {
+          $(".logo-image").attr("src", "img/visionfinal.png"); // if not, change it back to transparent
+        }
       });
+    });
   </script>
-<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="6a9fa9fbb3e34339c849d587-|49" defer=""></script></body>
+  <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js"
+    data-cf-settings="6a9fa9fbb3e34339c849d587-|49" defer=""></script>
 </body>
+</body>
+
 </html>
